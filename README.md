@@ -37,3 +37,7 @@ Configuration information of the returned JSON
 | website | ```string``` | Name of e-commerce website scraped |
 | searchedString | ```string``` | String used to search product |
 | results | ```list``` | List of results  |
+| title | ```string``` | Name of the product  |
+| price | ```float``` | Price of the item scraped  |
+| currency | ```string``` | Currency of the returned price of item  |
+
