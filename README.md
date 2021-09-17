@@ -1,6 +1,6 @@
 ## :money_with_wings: Slash
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Run Python Tests](https://github.com/rahil1304/cheaper/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/rahil1304/cheaper/actions/workflows/python-app.yml) [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Run Python Tests](https://github.com/secheaper/cheaper/blob/main/.github/workflows/python-app.yml/badge.svg?branch=Moksh-17-Sept-Adding_Test_Cases)](https://github.com/secheaper/cheaper/blob/main/.github/workflows/python-app.yml) [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
 
 
 Stop wasting time and money — Slash helps you find the best deals online.
