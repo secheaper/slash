@@ -5,7 +5,6 @@ def main():
     prods = searchAmazon("apple airpods")
     for p in prods:
         print(p)
-    # searchWalmart("comforter cover")
 
 def httpsGet(URL):
     print(URL)
