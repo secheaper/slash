@@ -11,7 +11,7 @@ Stop wasting time and money — Slash helps you find the best deals online.
 - The growth of e-commerce has prompted cut throat competition amongst them, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
 - This is what Slashed aims to reduce by giving you a easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
 
-![Alt Text](https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g)
+![Alt Text](https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g) ![Alt Text](https://media.giphy.com/media/J2szWbDQaXQ6Q/giphy.gif?cid=ecf05e47lzatyzv9zr3rws9ih4ydjlh2tcmfjxhkqbwwh3hz&rid=giphy.gif&ct=g)
 
 ### What does Slash do?
 Pass any search string to the Slash API. It can be called by the following command
