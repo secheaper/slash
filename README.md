@@ -9,7 +9,7 @@ Stop wasting time and money — Slash helps you find the best deals online.
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
 - The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
 - The growth of e-commerce has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
-- This is what Slashed aims to reduce by giving you a easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
+- This is what Slash aims to reduce by giving you a easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
 
 
 <p float="left">
