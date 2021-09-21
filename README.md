@@ -5,10 +5,10 @@
 
 Stop wasting time and money — Slash helps you find the best deals online.
 - Slash is an upcoming chrome extension and API that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites. 
-- In a market where we are spoilt for choices, we often look for the best deals. In the olden days, this often meant going to the store and looking for the best deals for us and being able to grab them. 
+- In a market where we are spoilt for choices, we often look for the best deals.  
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
 - The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
-- The growth of e-commerce, sellers and cut throat competition is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
+- The growth of e-commerce has prompted cut throat competition amongst them, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
 - This is what Slashed aims to reduce by giving you a easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
 
 ![Alt Text](https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g)
