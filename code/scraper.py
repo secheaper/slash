@@ -17,8 +17,8 @@ def searchAmazon(query):
     for res in results:
         title = res.select("h2 a span")[0].get_text().strip()
         price = res.select("span.a-price span")[0].get_text().strip()
-        products.append({"title": title, "price": price, "website":"amazon"})
-    return products
+        products.append({"title": title, "price": price, "link":"www.amazon.com", "website":"amazon"})
+    return buildResult(products)
 
 def searchWalmart(query):
     query = formatSearchQuery(query)
@@ -29,8 +29,11 @@ def searchWalmart(query):
     for res in results:
         title = res.select("span.lh-title")[0].get_text().strip()
         price = res.select("div.lh-copy")[0].get_text().strip()
-        products.append({"title": title, "price": price, "website":"walmart"})
-    return products
+        products.append({"title": title, "price": price, "link":"www.walmart.com", "website":"walmart"})
+    return buildResult(products)
+
+def buildResult(arr):
+    return arr[0]
 
 def formatSearchQuery(query):
     return query.replace(" ", "+")
