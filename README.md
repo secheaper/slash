@@ -6,7 +6,7 @@
 Stop wasting time and money — Slash helps you find the best deals online.
 Slash is an upcoming chrome extension and API that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites.
 
-![Alt Text](https://giphy.com/gifs/money-shop-knife-3ohze3cqkv058SUy2s)
+![Alt Text](https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g)
 
 ### What does Slash do?
 Pass any search string to the Slash API. It can be called by the following command
