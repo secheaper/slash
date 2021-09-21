@@ -12,7 +12,10 @@ Stop wasting time and money — Slash helps you find the best deals online.
 - This is what Slashed aims to reduce by giving you a easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
 
 
-<img src="https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g" width= "50%" height="50%"/> <img src="https://media.giphy.com/media/J2szWbDQaXQ6Q/giphy.gif?cid=ecf05e47sbd284u1sodsywwh4l2v5v64rfadf4kg5t0vhw3l&rid=giphy.gif&ct=g" width= "50%" height="50%"/>
+<p float="left">
+<img src="https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g" width= "50%" height="50%"/>
+<img src="https://media.giphy.com/media/J2szWbDQaXQ6Q/giphy.gif?cid=ecf05e47sbd284u1sodsywwh4l2v5v64rfadf4kg5t0vhw3l&rid=giphy.gif&ct=g" width= "50%" height="50%"/>  
+</p>
 
 <!-- ![Alt Text](https://media.giphy.com/media/3ohze3cqkv058SUy2s/giphy.gif?cid=ecf05e471lrcuf3ucso5i3yrucua074n5wqx1m12t41a4h92&rid=giphy.gif&ct=g) ![Alt Text](https://media.giphy.com/media/J2szWbDQaXQ6Q/giphy.gif?cid=ecf05e47sbd284u1sodsywwh4l2v5v64rfadf4kg5t0vhw3l&rid=giphy.gif&ct=g) -->
 
