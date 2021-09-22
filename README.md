@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
 [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
+![Github](https://img.shields.io/badge/language-python-red.svg)
 
 
 Stop wasting time and money — Slash helps you find the best deals online.
