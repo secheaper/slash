@@ -9,7 +9,7 @@ def httpsGet(URL):
     return BeautifulSoup(soup1.prettify(), "html.parser") 
 
 def searchAmazon(query):
-    query = formatSearchQuery(query)
+    # query = formatSearchQuery(query)
     URL = f'https://www.amazon.com/s?k={query}'
     page = httpsGet(URL)
     results = page.findAll("div", {"data-component-type":"s-search-result"})
@@ -21,7 +21,7 @@ def searchAmazon(query):
     return buildResult(products)
 
 def searchWalmart(query):
-    query = formatSearchQuery(query)
+    # query = formatSearchQuery(query)
     URL = f'https://www.walmart.com/search?q={query}'
     page = httpsGet(URL)
     results = page.findAll("div", {"data-item-id":True})
@@ -33,7 +33,10 @@ def searchWalmart(query):
     return buildResult(products)
 
 def buildResult(arr):
-    return arr[0]
+    # first index has the most relevant search result.
+    # this can be made better
+    return arr[0] 
 
 def formatSearchQuery(query):
+    # this could be removed
     return query.replace(" ", "+")
