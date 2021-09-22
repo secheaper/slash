@@ -1,13 +1,9 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Build
+name: Python Application
 
-on:
-  push:
-    branches: [ smankar-21-sep-cicd ]
-  pull_request:
-    branches: [ smankar-21-sep-cicd ]
+on: [push, pull_request]
 
 jobs:
   build:
