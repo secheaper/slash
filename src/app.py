@@ -13,7 +13,7 @@ def search():
     results = {
         'timestamp': round(time.time()*1000),
         'searchedString': query.replace("+"," "),
-        'results': [amazonProd, walmartProd],
+        'results': amazonProd + walmartProd,
     }
     
     return jsonify(results)

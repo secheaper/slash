@@ -17,7 +17,8 @@ def searchAmazon(query):
     for res in results:
         title = res.select("h2 a span")[0].get_text().strip()
         price = res.select("span.a-price span")[0].get_text().strip()
-        products.append({"title": title, "price": price, "link":"www.amazon.com", "website":"amazon"})
+        link = res.select("h2 a.a-link-normal")[0]['href']
+        products.append({"title": title, "price": price, "link":f'www.amazon.com{link}', "website":"amazon"})
     return buildResult(products)
 
 def searchWalmart(query):
@@ -29,13 +30,14 @@ def searchWalmart(query):
     for res in results:
         title = res.select("span.lh-title")[0].get_text().strip()
         price = res.select("div.lh-copy")[0].get_text().strip()
-        products.append({"title": title, "price": price, "link":"www.walmart.com", "website":"walmart"})
+        link = res.select("a")[0]['href']
+        products.append({"title": title, "price": price, "link":f'www.walmart.com{link}', "website":"walmart"})
     return buildResult(products)
 
 def buildResult(arr):
     # first index has the most relevant search result.
     # this can be made better
-    return arr[0] 
+    return arr[:2] 
 
 def formatSearchQuery(query):
     # this could be removed
