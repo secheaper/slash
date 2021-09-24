@@ -1,10 +1,13 @@
 import requests
+import random
 from bs4 import BeautifulSoup
 
 def httpsGet(URL):
     print(URL)
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
-    page = requests.get(URL, headers=headers)
+    proxies_list = ["128.199.109.241:8080","113.53.230.195:3128","125.141.200.53:80","125.141.200.14:80","128.199.200.112:138","149.56.123.99:3128","128.199.200.112:80","125.141.200.39:80","134.213.29.202:4444"]
+    proxies = {'https':random.choice(proxies_list)}
+    page = requests.get(URL, headers=headers, proxies=proxies)
     soup1 = BeautifulSoup(page.content, "html.parser")
     return BeautifulSoup(soup1.prettify(), "html.parser") 
 
