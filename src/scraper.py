@@ -12,6 +12,7 @@ def searchAmazon(query):
     # query = formatSearchQuery(query)
     URL = f'https://www.amazon.com/s?k={query}'
     page = httpsGet(URL)
+    print(page)
     results = page.findAll("div", {"data-component-type":"s-search-result"})
     products = []
     for res in results:
