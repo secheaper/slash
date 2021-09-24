@@ -15,10 +15,9 @@ def searchAmazon(query):
     results = page.findAll("div", {"data-component-type":"s-search-result"})
     products = []
     for res in results:
-        title = res.select("h2 a span")[0].get_text().strip()
-        price = res.select("span.a-price span")[0].get_text().strip()
-        link = res.select("h2 a.a-link-normal")[0]['href']
-        products.append({"title": title, "price": price, "link":f'www.amazon.com{link}', "website":"amazon"})
+        titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
+        product = formatResult("amazon",  titles, prices, links)
+        products.append(product)
     return buildResult(products)
 
 def searchWalmart(query):
@@ -28,16 +27,23 @@ def searchWalmart(query):
     results = page.findAll("div", {"data-item-id":True})
     products = []
     for res in results:
-        title = res.select("span.lh-title")[0].get_text().strip()
-        price = res.select("div.lh-copy")[0].get_text().strip()
-        link = res.select("a")[0]['href']
-        products.append({"title": title, "price": price, "link":f'www.walmart.com{link}', "website":"walmart"})
+        titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
+        product = formatResult("walmart", titles, prices, links)
+        products.append(product)
     return buildResult(products)
 
 def buildResult(arr):
     # first index has the most relevant search result.
     # this can be made better
-    return arr[:2] 
+    return arr[:2]
+
+def formatResult(website, titles, prices, links):
+    title, price, link = '', '', ''
+    if titles: title = titles[0].get_text().strip()
+    if prices: price = prices[0].get_text().strip()
+    if links: link = links[0]['href']
+    product = {"title": title, "price": price, "link":f'www.{website}.com{link}', "website": website}
+    return product
 
 def formatSearchQuery(query):
     # this could be removed
