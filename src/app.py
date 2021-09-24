@@ -8,12 +8,13 @@ app = Flask(__name__)
 @app.route('/search', methods=['GET'])
 def search():
     query = request.args.get('q')
-    amazonProd = scraper.searchAmazon(query)
+    # amazonProd = scraper.searchAmazon(query)
     walmartProd = scraper.searchWalmart(query)
     results = {
         'timestamp': round(time.time()*1000),
         'searchedString': query.replace("+"," "),
-        'results': amazonProd + walmartProd,
+        # 'results': amazonProd + walmartProd,
+        'results': walmartProd,
     }
     
     return jsonify(results)
