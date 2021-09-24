@@ -43,6 +43,7 @@ def formatResult(website, titles, prices, links):
     if prices: price = prices[0].get_text().strip()
     if links: link = links[0]['href']
     product = {"title": title, "price": price, "link":f'www.{website}.com{link}', "website": website}
+    print(product)
     return product
 
 def formatSearchQuery(query):
