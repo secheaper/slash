@@ -1,23 +1,21 @@
-from flask import Flask, jsonify, request
+import sys
 import scraper
-import time
+from tabulate import tabulate
 
-#init app
-app = Flask(__name__)
 
-@app.route('/search', methods=['GET'])
-def search():
-    query = request.args.get('q')
-    # amazonProd = scraper.searchAmazon(query)
+def main():
+    query = sys.argv[1]
+    amazonProd = scraper.searchAmazon(query)
     walmartProd = scraper.searchWalmart(query)
     results = {
-        'timestamp': round(time.time()*1000),
         'searchedString': query.replace("+"," "),
-        # 'results': amazonProd + walmartProd,
-        'results': walmartProd,
+        'results': amazonProd + walmartProd,
     }
-    
-    return jsonify(results)
+    print()
+    print()
+    print(tabulate(results["results"], headers="keys"))
+    print()
+    print()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    main()
