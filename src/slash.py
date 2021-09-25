@@ -9,8 +9,8 @@ def main():
     parser.add_argument('--search', type=str, help='Product search query')
     parser.add_argument('--num', type=int, help="Maximum number of records", default=3)
     parser.add_argument('--sort', type=str, nargs='+', help="Sort according to re (relevance: default), pr (price) or ra (rating)", default="re")
-    parser.add_argument('--link', action='store_true')
-    parser.add_argument('--des', action='store_true')
+    parser.add_argument('--link', action='store_true', help="Show links in the table")
+    parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
     args = parser.parse_args()
     
     products1 = scraper.searchAmazon(args.search)
