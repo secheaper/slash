@@ -14,6 +14,14 @@ def formatResult(website, titles, prices, links):
     }
     return product
 
+def sortList(arr, sortBy, reverse):
+    if sortBy == "pr":
+        return sorted(arr, key=lambda x: getNumbers(x["price"]), reverse=reverse)
+    elif sortBy == "ra":
+        # return sorted(arr, key=lambda x: getNumbers(x.price), reverse=reverse)
+        pass
+    return arr
+
 def formatSearchQuery(query):
     return query.replace(" ", "+")
 
@@ -21,3 +29,10 @@ def formatTitle(title):
     if(len(title) > 40):
         return title[:40] + "..."
     return title
+
+def getNumbers(st):
+    ans = ''
+    for ch in st:
+        if (ch >= '0' and ch <= '9') or ch == '.':
+            ans += ch
+    return float(ans)

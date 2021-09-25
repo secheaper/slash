@@ -18,7 +18,7 @@ def searchAmazon(query):
         titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
         product = formatter.formatResult("amazon",  titles, prices, links)
         products.append(product)
-    return buildResult(products)
+    return products
 
 def searchWalmart(query):
     query = formatter.formatSearchQuery(query)
@@ -30,9 +30,4 @@ def searchWalmart(query):
         titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
         product = formatter.formatResult("walmart", titles, prices, links)
         products.append(product)
-    return buildResult(products)
-
-def buildResult(arr):
-    # first index has the most relevant search result.
-    # this can be made better
-    return arr[:2]
+    return products
