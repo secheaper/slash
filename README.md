@@ -16,7 +16,7 @@ Stop wasting time and money — Slash helps you find the best deals online.
 
 ### What does Slash do?
 Pass any search string to Slash. It can be called by the following command
-<pre><code>python3 slash.py airpods</code></pre>
+<pre><code>python3 slash.py --search airpods</code></pre>
 
 Slash returns the prices for the searched items from e-commerce websites in a tabular form
 
