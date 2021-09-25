@@ -10,7 +10,7 @@ def formatResult(website, titles, prices, links):
         'timestamp': round(time.time()*1000),
         "title": formatTitle(title),
         "price": price, 
-        "link":f'www.{website}.com{link}', 
+        # "link":f'www.{website}.com{link}', 
         "website": website,
     }
     return product
