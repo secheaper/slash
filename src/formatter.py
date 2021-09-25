@@ -1,4 +1,5 @@
 import time
+import math
 
 def formatResult(website, titles, prices, links):
     title, price, link = '', '', ''
@@ -35,4 +36,8 @@ def getNumbers(st):
     for ch in st:
         if (ch >= '0' and ch <= '9') or ch == '.':
             ans += ch
-    return float(ans)
+    try:
+        ans = float(ans)
+    except:
+        ans = math.inf
+    return ans
