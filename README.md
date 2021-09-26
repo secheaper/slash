@@ -1,4 +1,4 @@
-## :money_with_wings: Slash
+<p align="center"><img width="500" src="./assets/slash.png"></p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
