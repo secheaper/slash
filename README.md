@@ -4,7 +4,7 @@
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
 [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
-[![codecov](https://codecov.io/gh/secheaper/cheaper/branch/moksh98-codecov/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/secheaper/cheaper)
+[![codecov](https://codecov.io/gh/secheaper/cheaper/branch/main/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/secheaper/cheaper)
 
 
 Stop wasting time and money — Slash helps you find the best deals online.
