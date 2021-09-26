@@ -13,7 +13,9 @@ Slash is a command line tool that scrapes the most popular e-commerce websites t
 - **Easy**: Slash uses very easy commands to filter, sort and search your items
 - **Powerful**: Quickly alter the commands to get desired results
 
-Insert basic working .gif here
+---
+
+<p align="center"><img width="700" src="./assets/demo.gif"></p>
 
 ---
 
