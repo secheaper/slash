@@ -6,9 +6,34 @@
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 [![codecov](https://codecov.io/gh/secheaper/cheaper/branch/main/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/secheaper/cheaper)
 
+Slash is a command line tool that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites. 
+- **Fast**: With slash, you can save over 50% of your time by comparing deals across websites within seconds
+- **Easy**: Slash uses very easy commands to filter, sort and search your items
+- **Powerful**: Quickly alter the commands to get desired results
 
-Stop wasting time and money — Slash helps you find the best deals online.
-- Slash is a command line tool that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites. 
+Insert basic working .gif here
+
+---
+
+Installation
+---
+<br/> Step 1: Clone the repository and go to the directory
+```
+git clone https://github.com/secheaper/slash.git
+cd slash
+```
+<br/> Step 2: Get the required packages
+```
+pip install -r requirements.txt
+```
+<br/> Step 3: Go to the source code and run
+```
+cd src
+python3 slash.py "philips hue"
+```
+
+Why
+---
 - In a market where we are spoilt for choices, we often look for the best deals.  
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
 - The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
