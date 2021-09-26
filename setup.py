@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cheaper',
+    name='Slash',
     version='1.0.0',
     install_requires=[
         'pytest'
