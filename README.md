@@ -1,6 +1,6 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+![GitHub](https://img.shields.io/github/license/secheaper/slash)
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
 [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
