@@ -1,4 +1,4 @@
-import time
+from datetime import datetime
 import math
 
 def formatResult(website, titles, prices, links):
@@ -7,7 +7,7 @@ def formatResult(website, titles, prices, links):
     if prices: price = prices[0].get_text().strip()
     if links: link = links[0]['href']
     product = {
-        'timestamp': round(time.time()*1000),
+        'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "title": formatTitle(title),
         "price": price, 
         # "link":f'www.{website}.com{link}', 
