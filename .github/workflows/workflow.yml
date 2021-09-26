@@ -4,9 +4,9 @@ name: Code Coverage
 
 on:
   push:
-    branches: [ moksh98-codecov ]
+    branches: [ main ]
   pull_request:
-    branches: [ moksh98-codecov ]
+    branches: [ main ]
 
 jobs:
   build:
