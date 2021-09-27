@@ -6,8 +6,8 @@
 |-----|------|---------|
 |workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
 but nevertheless, here is a track record that everyone is contributing a lot)|2|evidence  in GH|
-| Number of commits|2|in GH|
-| Number of commits: by different people|2|in GH|
+| Number of commits|2|https://github.com/secheaper/slash/graphs/commit-activity|
+| Number of commits: by different people|2|https://github.com/secheaper/slash/graphs/commit-activity|
 | Issues reports: there are **many**|2||
 |  issues are being  closed|2|evidence in GH|
 | DOI badge: exists |2|in GH|
@@ -25,8 +25,8 @@ but nevertheless, here is a track record that everyone is contributing a lot)|2|
 | test cases exist|2|dozens of tests and those test cases are more than 30% of the  code base|
 | test cases are routinely executed|2|e.g. travis-com.com or github actions or something|
  | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2||
-| issues are discussed before they are closed|2|even if you discuss in slack, need a sumamry statement here|
-| Chat channel: exists|2||
+| issues are discussed before they are closed|2|every issue is dicussed by all, then assigned to one appropriate person for closure|
+| Chat channel: exists|2|https://discord.com/channels/879343473940107264/879343474393096237|
 | test cases:.a large proportion of the issues related to handling failing cases.|2|if a test case fails, open an issue and fix it|
 | evidence that the whole team is using the same tools: everyone can get to all tools and files|2||
 | evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|2||
