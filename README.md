@@ -38,7 +38,7 @@ cd src
 python3 slash.py "philips hue"
 ```
 
-Why
+Why?
 ---
 - In a market where we are spoilt for choices, we often look for the best deals.  
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
