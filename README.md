@@ -6,6 +6,8 @@
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/secheaper/cheaper)
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/secheaper/cheaper)
+![Github pull requests](https://img.shields.io/github/issues-pr/secheaper/cheaper)
+![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/secheaper/cheaper)
 [![codecov](https://codecov.io/gh/secheaper/cheaper/branch/main/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/secheaper/cheaper)
 
 Slash is a command line tool that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites. 
@@ -60,3 +62,15 @@ Slash returns the prices for the searched items from e-commerce websites in a ta
 | 1632601615899 | Apple AirPods with Charging Case (Latest... | $119.00 | walmart   |
 | 1632601615899 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
 ```
+
+## Contributors ✨
+
+<table>
+  <tr>
+    <td align="center"><a href="http://www.shubhammankar.com/"><img src="https://avatars.githubusercontent.com/u/29366125?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Mankar</b></sub></a></td>
+    <td align="center"><a href="https://github.com/pratikdevnani"><img src="https://avatars.githubusercontent.com/u/43350493?v=4" width="100px;" alt=""/><br /><sub><b>Pratik Devnani</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/moksh98"><img src="https://avatars.githubusercontent.com/u/29693765?v=4" width="100px;" alt=""/><br /><sub><b>Moksh Jain</b></sub></a><br /></td>
+    <td align="center"><a href="https://rahilsarvaiya.tech/"><img src="https://avatars0.githubusercontent.com/u/32304956?v=4" width="100px;" alt=""/><br /><sub><b>Rahil Sarvaiya</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/annie0467"><img src="https://avatars.githubusercontent.com/u/17164255?v=4" width="100px;" alt=""/><br /><sub><b>Anushi Keswani</b></sub></a><br /></td>
+  </tr>
+</table>
