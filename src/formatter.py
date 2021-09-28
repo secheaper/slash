@@ -7,7 +7,7 @@ def formatResult(website, titles, prices, links):
     if prices: price = prices[0].get_text().strip()
     if links: link = links[0]['href']
     product = {
-        'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+        'timestamp': datetime.now(datetime.now().astimezone().tzinfo).strftime("%d/%m/%Y %H:%M:%S"),
         "title": formatTitle(title),
         "price": price, 
         # "link":f'www.{website}.com{link}', 
