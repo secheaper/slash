@@ -53,14 +53,14 @@ Pass any search string to Slash. It can be called by the following command
 Slash returns the prices for the searched items from e-commerce websites in a tabular form
 
 ```
-|     timestamp | title                                       | price   | website   |
-|---------------|---------------------------------------------|---------|-----------|
-| 1632601614061 | Apple AirPods with Charging Case            | $119.00 | amazon    |
-| 1632601614068 | Apple AirPods Pro                           | $197.00 | amazon    |
-| 1632601614073 | Apple AirPods Pro                           | $197.00 | amazon    |
-| 1632601615898 | Apple AirPods Pro                           | $197.00 | walmart   |
-| 1632601615899 | Apple AirPods with Charging Case (Latest... | $119.00 | walmart   |
-| 1632601615899 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
+| timestamp           | title                                       | price   | website   |
+|---------------------|---------------------------------------------|---------|-----------|
+| 28/09/2021 09:03:47 | Apple AirPods with Charging Case            | $119.00 | amazon    |
+| 28/09/2021 09:03:47 | Apple AirPods Pro                           | $197.00 | amazon    |
+| 28/09/2021 09:03:47 | Apple AirPods with Charging Case            | $119.00 | amazon    |
+| 28/09/2021 09:03:49 | Apple AirPods Pro                           | $197.00 | walmart   |
+| 28/09/2021 09:03:49 | Apple AirPods with Charging Case (Latest... | $119.00 | walmart   |
+| 28/09/2021 09:03:49 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
 ```
 
 ## Contributors ✨
