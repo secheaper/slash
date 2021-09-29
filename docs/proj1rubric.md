@@ -92,3 +92,11 @@ Sr. No| Notes|Self-assement|evidence|
 86| Do you have a contributions policy | Yes ||
 87| Is your contributions' policy publicly available? | Yes ||
 88| Do contributors keep the copyright/IP of their contributions | ||
+89| Website and documentation clearly states the copyright owners of your software and documentation | ||
+90| Do each of your source code files include a copyright statement | ||
+91| The website and documentation clearly state the licence of your software | ||
+92| Software released under an open source licence | Yes ||
+93| Software released under an OSI-approved open-source licence | Yes ||
+94| Source code files include a licence header | Yes ||
+95| Recommended citation for your software | ||
+96| 
