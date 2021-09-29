@@ -63,22 +63,78 @@ Currently the tool supports the following flags and command line arguments. Thes
 
 :card_index_dividers: Some Examples
 ---
-Pass any search string to Slash. It can be called by the following command
-```
-python3 slash.py --search airpods
-```
 
-Slash returns the prices for the searched items from e-commerce websites in a tabular form
-
+#### 1. Searching
+```--search```  accepts one argument string which it uses to search and scrape the requested products on 
+the e-commerce websites. So, to use this, run the python script followed by the --search argument and the 
+search string. The search string should be in double quotes if it have two or more words. Example:
+```
+python3 slash.py --search socks
+```
 ```
 | timestamp           | title                                       | price   | website   |
 |---------------------|---------------------------------------------|---------|-----------|
-| 28/09/2021 09:03:47 | Apple AirPods with Charging Case            | $119.00 | amazon    |
-| 28/09/2021 09:03:47 | Apple AirPods Pro                           | $197.00 | amazon    |
-| 28/09/2021 09:03:47 | Apple AirPods with Charging Case            | $119.00 | amazon    |
-| 28/09/2021 09:03:49 | Apple AirPods Pro                           | $197.00 | walmart   |
-| 28/09/2021 09:03:49 | Apple AirPods with Charging Case (Latest... | $119.00 | walmart   |
-| 28/09/2021 09:03:49 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
+| 29/09/2021 14:00:55 | Men's 6 Pack Ankle Running Socks Low Cut... | $15.95  | amazon    |
+| 29/09/2021 14:00:55 | 6 Pack Women's Ankle Running Socks, Low ... | $15.95  | amazon    |
+| 29/09/2021 14:00:55 | UltraGlide Friction-Free No-Show Running... | $17.00  | amazon    |
+| 29/09/2021 14:00:57 | Gildan Adult Men's Performance Cotton mo... | $10.97  | walmart   |
+| 29/09/2021 14:00:57 | Reebok Women's Lightweight Low Cut Socks... | $8.97   | walmart   |
+| 29/09/2021 14:00:57 | Athletic Works Men's Ankle Socks 12 Pack    | $9.97   | walmart   |
+```
+#### 2. Sorting
+```--sort``` accepts one or more arguments that determine how the tool sorts and filters the requested products
+after scraping. The first value is used to initially sort and filter the results of the scraping. The arguments
+following the first one are not required but will be used to further sort the filtered results. Example:
+```
+python3 slash.py --search socks --sort pr
+```
+```
+| timestamp           | title                                       | price      | website   |
+|---------------------|---------------------------------------------|------------|-----------|
+| 29/09/2021 14:06:38 | Fruit of the Loom Boys Dual Defense Cush... | $7.97      | walmart   |
+| 29/09/2021 14:06:37 | womens Active 6 Pair Pack Socks             | $7.99      | amazon    |
+| 29/09/2021 14:06:37 | womens 6-pair Lightweight Breathable Ven... | $8.97      | amazon    |
+| 29/09/2021 14:06:38 | Reebok Women's Lightweight Low Cut Socks... | $8.97      | walmart   |
+| 29/09/2021 14:06:38 | Hanes Women's Cool Comfort Sport Ankle S... | From $8.97 | walmart   |
+| 29/09/2021 14:06:37 | Women's 6 Pack Runner Socks                 | $9.66      | amazon    |
+```
+#### 3. Sort Order
+The ```--des``` flag can be set to sort the requested products in a non-increasing order. This flag will be 
+actually used when coupled with ```--sort```. Example:
+```
+python3 slash.py --search socks --sort pr --des
+```
+```
+| timestamp           | title                                       | price   | website   |
+|---------------------|---------------------------------------------|---------|-----------|
+| 29/09/2021 14:10:21 | Performance Cushion Crew Socks with Band... |         | amazon    |
+| 29/09/2021 14:10:21 | 6-pk. Performance Cotton Crew Socks Size... | $34.50  | amazon    |
+| 29/09/2021 14:10:21 | Womens Bulk 36 Pack Ultimate Athletic Sp... | $29.95  | amazon    |
+| 29/09/2021 14:10:22 | Woman's 6 Pack Thick Thermal Crew Cold W... | $19.99  | walmart   |
+| 29/09/2021 14:10:22 | Jobsite's Men's Fast Dry Shrink Resistan... | $19.44  | walmart   |
+| 29/09/2021 14:10:22 | Gildan Adult Men's Performance Cotton mo... | $10.97  | walmart   |
+```
+
+#### 4. Result length
+The maximum number of results that are scraped from each website can be set using the ```--num``` argument. It accepts
+an integer value ```n``` and then returns ```n``` results from each website. Note that tool returns a maximum of 
+the value of ```n``` and the number of results on the webiste. By default this value is set to 3. Example:
+```
+python3 slash.py --search socks --num 5
+```
+```
+| timestamp           | title                                       | price   | website   |
+|---------------------|---------------------------------------------|---------|-----------|
+| 29/09/2021 14:13:45 | Men's 6 Pack Ankle Running Socks Low Cut... | $15.95  | amazon    |
+| 29/09/2021 14:13:45 | 6 Pack Women's Ankle Running Socks, Low ... | $15.95  | amazon    |
+| 29/09/2021 14:13:45 | UltraGlide Friction-Free No-Show Running... | $17.00  | amazon    |
+| 29/09/2021 14:13:45 | u&i Men's Performance Cushion Cotton Ath... | $19.99  | amazon    |
+| 29/09/2021 14:13:45 | Mens Cushioned Work Socks 10 Pairs          | $12.10  | amazon    |
+| 29/09/2021 14:13:46 | Gildan Adult Men's Performance Cotton mo... | $10.97  | walmart   |
+| 29/09/2021 14:13:46 | Reebok Women's Lightweight Low Cut Socks... | $8.97   | walmart   |
+| 29/09/2021 14:13:46 | Athletic Works Men's Ankle Socks 12 Pack    | $9.97   | walmart   |
+| 29/09/2021 14:13:46 | Athletic Works Men's Crew Socks 12 Pack     | $9.97   | walmart   |
+| 29/09/2021 14:13:46 | Aerosoles Women's Low Cut Socks, 10-Pack    | $10.00  | walmart   |
 ```
 
 :page_facing_up: Why
