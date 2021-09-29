@@ -99,4 +99,6 @@ Sr. No| Notes|Self-assement|evidence|
 93| Software released under an OSI-approved open-source licence | Yes ||
 94| Source code files include a licence header | Yes ||
 95| Recommended citation for your software | ||
-96| 
+96| Documentation includes a project roadmap (a list of project and development milestones for the next 3, 6 months) | ||
+97| Documentation describe how the project is funded, and the period over which funding is guaranteed? | ||
+98| Do you make timely announcements of the deprecation of components, APIs, etc. | ||
