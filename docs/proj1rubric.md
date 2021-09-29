@@ -56,3 +56,6 @@ Sr. No| Notes|Self-assement|evidence|
 50| E-mails to our support e-mail address are received by more than one person | ||
 51| Project have a ticketing system to manage bug reports and feature requests | ||
 52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | ||
+53| Software’s architecture and design is modular | ||
+54| Software uses an accepted coding standard or convention | ||
+55| 
