@@ -51,11 +51,12 @@ Sr. No| Notes|Self-assement|evidence|
 45| Documentation stored under revision control with source code| 3 ||
 46| Publishing the release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation | 2 ||
 47| Software describes how a user can get help with using your software | ||
-48| Our documentation describes what support we provide to users and developers? | ||
+48| Our documentation describes what support we provide to users and developers | ||
 49| Project has an e-mail address or forum that is solely for supporting users | ||
 50| E-mails to our support e-mail address are received by more than one person | ||
 51| Project have a ticketing system to manage bug reports and feature requests | ||
 52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | ||
 53| Software’s architecture and design is modular | ||
 54| Software uses an accepted coding standard or convention | ||
-55| 
+55| Software allows data to be imported and exported using open data formats | ||
+56| Software allows communications using open communications protocols | ||
