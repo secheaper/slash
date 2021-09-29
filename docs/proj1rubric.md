@@ -20,9 +20,9 @@ Sr. No| Notes|Self-assement|evidence|
 14| Use of  style checkers |2|config files in GH showing your config|
 15| Use of code  formatters. |2|config files in GH showing your this formatter's  config|
 16| Use of syntax checkers. |2|config files iin  GH showing this checker's config  |
-17| Use of code coverage |2|https://github.com/secheaper/slash/blob/main/.github/workflows/workflow.yml|
+17| Use of code coverage |3|https://github.com/secheaper/slash/blob/main/.github/workflows/workflow.yml|
 18| other automated analysis tools|2|config files in GH|
-19| test cases exist|2|https://github.com/secheaper/slash/blob/main/tests/test_app.py|
+19| test cases exist|3|https://github.com/secheaper/slash/blob/main/tests/test_app.py|
 20| test cases are routinely executed|3|https://github.com/secheaper/slash/blob/main/.github/workflows/python-app.yml|
 21| the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2||
 22| issues are discussed before they are closed|2|every issue is dicussed by all, then assigned to one appropriate person for closure|
