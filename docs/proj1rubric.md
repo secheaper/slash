@@ -61,3 +61,5 @@ Sr. No| Notes|Self-assement|evidence|
 55| Software allows data to be imported and exported using open data formats | ||
 56| Software allows communications using open communications protocols | ||
 57| Software cross-platform compatible | ||
+58| Software adhere to appropriate accessibility conventions or standards | ||
+59| Documentation adheres to appropriate accessibility conventions or standards | ||
