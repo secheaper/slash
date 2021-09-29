@@ -67,4 +67,12 @@ Sr. No| Notes|Self-assement|evidence|
 61| Releases are tagged in the repository | ||
 62| There is a branch of the repository that is always stable | ||
 63| Back-up your repository | ||
-64| 
+64| Provide publicly available instructions for building the software from the source code | ||
+65| Build, or package, the software using an automated tool | ||
+66| Provide publicly-available instructions for deploying the software | ||
+67| Documentation list all third-party dependencies | ||
+68| Documentation lists the version number for all third-party dependencies | ||
+69| Software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional | ||
+70| Download dependencies using a dependency management tool or package manager | ||
+71| Tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful | ||
+
