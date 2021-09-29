@@ -60,3 +60,4 @@ Sr. No| Notes|Self-assement|evidence|
 54| Software uses an accepted coding standard or convention | ||
 55| Software allows data to be imported and exported using open data formats | ||
 56| Software allows communications using open communications protocols | ||
+57| Software cross-platform compatible | ||
