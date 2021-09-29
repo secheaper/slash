@@ -5,15 +5,15 @@
 Sr. No| Notes|Self-assement|evidence|
 |----|--------|------|--------|
 1| workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
-2| but nevertheless, here is a track record that everyone is contributing a lot)|2|evidence  in GH|
-3| Number of commits|2|https://github.com/secheaper/slash/graphs/commit-activity|
-4| Number of commits: by different people|2|https://github.com/secheaper/slash/graphs/commit-activity|
-5| Issues reports: there are **many**|2||
-6|  issues are being  closed|2|evidence in GH|
-7| DOI badge: exists |2|in GH|
+2| but nevertheless, here is a track record that everyone is contributing a lot)|3|https://github.com/secheaper/slash/pulse|
+3| Number of commits|3|https://github.com/secheaper/slash/pulse|
+4| Number of commits: by different people|2|https://github.com/secheaper/slash/pulse|
+5| Issues reports: there are **many**|3|https://github.com/secheaper/slash/issues|
+6|  issues are being  closed|3|https://github.com/secheaper/slash/issues?q=is%3Aissue+is%3Aclosed+|
+7| DOI badge: exists |3|https://github.com/secheaper/slash/blob/main/README.md|
 8|Docs: doco generated , format not ugly|2 |in GH|
 9|Docs: what: point descriptions of each class/function (in isolation) |2||
-10|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|2|https://github.com/secheaper/slash/blob/main/assets/demo.gif|
+10|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|https://github.com/secheaper/slash/blob/main/README.md#card_index_dividers-some-examples|
 11|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|2||
 12|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|2|https://github.com/secheaper/slash/blob/main/assets/demo.gif|
 13| Use of version control tools|2||
