@@ -5,7 +5,7 @@
 [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/secheaper/slash)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/secheaper/cheaper)
+![Github closes issues](https://img.shields.io/github/issues-closed-raw/secheaper/slash)
 ![Github pull requests](https://img.shields.io/github/issues-pr/secheaper/cheaper)
 ![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/secheaper/cheaper)
 [![codecov](https://codecov.io/gh/secheaper/slash/branch/main/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/secheaper/slash)
