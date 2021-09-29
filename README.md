@@ -4,7 +4,7 @@
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
 [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
-![GitHub issues](https://img.shields.io/github/issues-raw/secheaper/cheaper)
+![GitHub issues](https://img.shields.io/github/issues-raw/secheaper/slash)
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/secheaper/cheaper)
 ![Github pull requests](https://img.shields.io/github/issues-pr/secheaper/cheaper)
 ![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/secheaper/cheaper)
