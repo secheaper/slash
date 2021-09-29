@@ -42,9 +42,13 @@ Sr. No| Notes|Self-assement|evidence|
 36| Software available for free | 3 ||
 37| Source code publicly available to download, either as a downloadable bundle or via access to a source code repository | 3 ||
 38| Software hosted in an established, third-party repository likeGitHub (https://github.com) | 3 ||
-39| Group members receiving emails, ticking system visible to all users|3||
-40| Comprehensive guide to all your software’s commands, functions and options|1|Not yet accomplished|
-41| If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation|1|Kept as future scope|
-42| Documentation stored under revision control with source code|0|NA|
-43| Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages|0|NA|
+39| Documentation clearly available on your website or within your software | 3 ||
+40| Documentation includes a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use | 3 ||
+41| Providing more extensive documentation, that gives a clear, step-by-step instructions on how to deploy and use our software | 3 ||
+42| Comprehensive guide to all your software’s commands, functions and options| 1 | Not yet accomplished|
+43| Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages| 0 | NA |
+44| If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation| 1 |Kept as future scope|
+45| Documentation stored under revision control with source code| 3 ||
+46| Publishing the release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation | 2 ||
+47| Group members receiving emails, ticking system visible to all users|3||
 
