@@ -64,8 +64,8 @@ Sr. No| Notes|Self-assement|evidence|
 58| Software adhere to appropriate accessibility conventions or standards | ||
 59| Documentation adheres to appropriate accessibility conventions or standards | ||
 60| Each source code releases a snapshot of the repository | ||
-61| Releases are tagged in the repository | ||
-62| There is a branch of the repository that is always stable | ||
+61| Releases are tagged in the repository | Yes | https://github.com/secheaper/slash/releases/tag/v1.0.0 |
+62| There is a branch of the repository that is always stable | Yes | the main branch is always stable|
 63| Back-up your repository | ||
 64| Provide publicly available instructions for building the software from the source code | ||
 65| Build, or package, the software using an automated tool | ||
@@ -88,16 +88,16 @@ Sr. No| Notes|Self-assement|evidence|
 82| Listing third-party publications that refer to the software on our website or link to a resource where these are available | ||
 83| Users can subscribe to notifications to changes to your source code repository | ||
 84| Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model | ||
-85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes || 
-86| Do you have a contributions policy | Yes ||
-87| Is your contributions' policy publicly available? | Yes ||
+85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes | We received a Pull Request from someone outside of our project fixing one of our issues (https://github.com/secheaper/slash/pull/15). He was simply browsing Github and came across our repo when he searched for the "good-first-issue" keyword. | 
+86| Do you have a contributions policy | Yes | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+87| Is your contributions' policy publicly available? | Yes | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
 88| Do contributors keep the copyright/IP of their contributions | ||
 89| Website and documentation clearly states the copyright owners of your software and documentation | ||
 90| Do each of your source code files include a copyright statement | ||
 91| The website and documentation clearly state the licence of your software | ||
 92| Software released under an open source licence | Yes ||
 93| Software released under an OSI-approved open-source licence | Yes ||
-94| Source code files include a licence header | Yes ||
+94| Source code files include a licence header | Yes | MIT License |
 95| Recommended citation for your software | ||
 96| Documentation includes a project roadmap (a list of project and development milestones for the next 3, 6 months) | ||
 97| Documentation describe how the project is funded, and the period over which funding is guaranteed? | ||
