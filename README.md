@@ -15,6 +15,8 @@ Slash is a command line tool that scrapes the most popular e-commerce websites t
 - **Easy**: Slash uses very easy commands to filter, sort and search your items
 - **Powerful**: Quickly alter the commands to get desired results
 
+Quick Links :: [Install](#installation) :: [Examples](#some-examples) :: [Why Slash](#why) :: [Contributors](#contributors)
+
 ---
 
 <p align="center"><img width="700" src="./assets/demo.gif"></p>
@@ -38,7 +40,7 @@ cd src
 python3 slash.py --search "philips hue"
 ```
 
-Why?
+Why
 ---
 - In a market where we are spoilt for choices, we often look for the best deals.  
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
@@ -46,7 +48,8 @@ Why?
 - E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
 - This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
 
-### What does Slash do?
+Some Examples
+---
 Pass any search string to Slash. It can be called by the following command
 ```
 python3 slash.py --search airpods
@@ -65,7 +68,7 @@ Slash returns the prices for the searched items from e-commerce websites in a ta
 | 28/09/2021 09:03:49 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
 ```
 
-## Contributors ✨
+## Contributors
 
 <table>
   <tr>
