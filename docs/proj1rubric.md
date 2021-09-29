@@ -80,5 +80,12 @@ Sr. No| Notes|Self-assement|evidence|
 74| Using continuous integration, automatically running tests whenever changes are made to your source code | ||
 75| Test results publicly visible | ||
 76| Manually-run tests documented | ||
-77| 
-
+77| Project has resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software | ||
+78| Website states how many projects and users are associated with your project | ||
+79| Provide success stories on your website | ||
+80| Listing the important partners and collaborators on our website | ||
+81| Listing the project's publications on our website or link to a resource where these are available | ||
+82| Listing third-party publications that refer to the software on our website or link to a resource where these are available | ||
+83| Users can subscribe to notifications to changes to your source code repository | ||
+84| Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model | ||
+85| 
