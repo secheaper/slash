@@ -88,4 +88,7 @@ Sr. No| Notes|Self-assement|evidence|
 82| Listing third-party publications that refer to the software on our website or link to a resource where these are available | ||
 83| Users can subscribe to notifications to changes to your source code repository | ||
 84| Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model | ||
-85| 
+85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes || 
+86| Do you have a contributions policy | Yes ||
+87| Is your contributions' policy publicly available? | Yes ||
+88| Do contributors keep the copyright/IP of their contributions | ||
