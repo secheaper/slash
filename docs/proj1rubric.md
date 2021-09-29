@@ -32,14 +32,19 @@ Sr. No| Notes|Self-assement|evidence|
 26| evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|2||
 27| evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|2||
 28| evidence that the members of the team are working across multiple places in the code base|2||
-29|short release cycles | 2|(hard to see in short projects) project members are committing often enough so that everyone can get your work|
-30|Documentation provides clear overview of software and uses |2||
-31|Case studies to show how software is used by us|2| provided Gif in the README.md|
-32|Project name unique and free from trademark violations|3||
-33|Software available for free, source code downloadable, hosted on Github|3||
-34|Group members receiving emails, ticking system visible to all users|3||
-35|Comprehensive guide to all your software’s commands, functions and options|1|Not yet accomplished|
-36|If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation|1|Kept as future scope|
-37|Documentation stored under revision control with source code|0|NA|
-38|Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages|0|NA|
+29| short release cycles | 2|(hard to see in short projects) project members are committing often enough so that everyone can get your work|
+30| Documentation provides clear overview of software and uses |2||
+31| Website and documentation clearly describe the type of user who should use your software | ||
+32| Case studies to show how software is used by us|2| provided Gif in the README.md|
+33| Project name unique |3||
+34| Project name free from trademark violations | 3 ||
+35| Software available as a package that can be deployed without building it | ||
+36| Software available for free | 3 ||
+37| Source code publicly available to download, either as a downloadable bundle or via access to a source code repository | 3 ||
+38| Software hosted in an established, third-party repository likeGitHub (https://github.com) | 3 ||
+39| Group members receiving emails, ticking system visible to all users|3||
+40| Comprehensive guide to all your software’s commands, functions and options|1|Not yet accomplished|
+41| If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation|1|Kept as future scope|
+42| Documentation stored under revision control with source code|0|NA|
+43| Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages|0|NA|
 
