@@ -52,15 +52,15 @@ Sr. No| Notes|Self-assement|evidence|
 46| Publishing the release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation | 2 ||
 47| Software describes how a user can get help with using your software | ||
 48| Our documentation describes what support we provide to users and developers | ||
-49| Project has an e-mail address or forum that is solely for supporting users | ||
-50| E-mails to our support e-mail address are received by more than one person | ||
-51| Project have a ticketing system to manage bug reports and feature requests | ||
-52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | ||
+49| Project has an e-mail address or forum that is solely for supporting users | Yes | secheaper@gmail.com |
+50| E-mails to our support e-mail address are received by more than one person | Yes | we all have the access credentials to the support email | 
+51| Project have a ticketing system to manage bug reports and feature requests | Yes | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
+52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | Yes | It's an open link on our public repo (https://github.com/secheaper/slash/projects/1) |
 53| Software’s architecture and design is modular | ||
 54| Software uses an accepted coding standard or convention | ||
 55| Software allows data to be imported and exported using open data formats | ||
 56| Software allows communications using open communications protocols | ||
-57| Software cross-platform compatible | ||
+57| Software cross-platform compatible | Yes | The only thing needed is python. It will work on all operating systems that have python. |
 58| Software adhere to appropriate accessibility conventions or standards | ||
 59| Documentation adheres to appropriate accessibility conventions or standards | ||
 60| Each source code releases a snapshot of the repository | ||
