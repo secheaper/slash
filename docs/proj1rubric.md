@@ -63,3 +63,8 @@ Sr. No| Notes|Self-assement|evidence|
 57| Software cross-platform compatible | ||
 58| Software adhere to appropriate accessibility conventions or standards | ||
 59| Documentation adheres to appropriate accessibility conventions or standards | ||
+60| Each source code releases a snapshot of the repository | ||
+61| Releases are tagged in the repository | ||
+62| There is a branch of the repository that is always stable | ||
+63| Back-up your repository | ||
+64| 
