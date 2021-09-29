@@ -7,26 +7,26 @@ Sr. No| Notes|Self-assement|evidence|
 1| workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
 2| but nevertheless, here is a track record that everyone is contributing a lot)|3|https://github.com/secheaper/slash/pulse|
 3| Number of commits|3|https://github.com/secheaper/slash/pulse|
-4| Number of commits: by different people|2|https://github.com/secheaper/slash/pulse|
+4| Number of commits: by different people|3|https://github.com/secheaper/slash/pulse|
 5| Issues reports: there are **many**|3|[Issues](https://github.com/secheaper/slash/issues)|
 6|  issues are being  closed|3|[Closed Issues](https://github.com/secheaper/slash/issues?q=is%3Aissue+is%3Aclosed+)|
 7| DOI badge: exists |3|Present in [README](https://github.com/secheaper/slash/blob/main/README.md)|
-8|Docs: doco generated , format not ugly|2 |in GH|
+8|Docs: doco generated , format not ugly|0 |Not yet implemented|
 9|Docs: what: point descriptions of each class/function (in isolation) |3|Functions and modules use docstring. [Example](https://github.com/secheaper/slash/blob/main/docs/proj1rubric.md)|
 10|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|[Examples](https://github.com/secheaper/slash/blob/main/README.md#card_index_dividers-some-examples)|
 11|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|[Section in README](https://github.com/secheaper/slash#page_facing_up-why)|
 12|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|https://github.com/secheaper/slash/blob/main/assets/demo.gif|
 13| Use of version control tools|3|Git is used thoroughly through the project|
-14| Use of  style checkers |2|config files in GH showing your config|
-15| Use of code  formatters. |2|config files in GH showing your this formatter's  config|
-16| Use of syntax checkers. |2|config files iin  GH showing this checker's config  |
+14| Use of  style checkers |0|config files in GH showing your config|
+15| Use of code  formatters. |0||
+16| Use of syntax checkers. |2|https://github.com/secheaper/slash/blob/main/.github/workflows/python-app.yml|
 17| Use of code coverage |3|https://github.com/secheaper/slash/blob/main/.github/workflows/workflow.yml|
-18| other automated analysis tools|2|config files in GH|
+18| other automated analysis tools|0||
 19| test cases exist|3|https://github.com/secheaper/slash/blob/main/tests/test_app.py|
-20| test cases are routinely executed|3|https://github.com/secheaper/slash/blob/main/.github/workflows/python-app.yml|
-21| the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2||
-22| issues are discussed before they are closed|2|every issue is dicussed by all, then assigned to one appropriate person for closure|
-23| Chat channel: exists|2|https://discord.com/channels/879343473940107264/879343474393096237|
+20| test cases are routinely executed|3|https://github.com/secheaper/slash/actions/workflows/python-app.yml|
+21| the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2|https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md|
+22| issues are discussed before they are closed|1||
+23| Chat channel: exists|3|https://discord.gg/K4khCZGR|
 24| test cases:.a large proportion of the issues related to handling failing cases.|2|if a test case fails, open an issue and fix it|
 25| evidence that the whole team is using the same tools: everyone can get to all tools and files|2||
 26| evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|2||
