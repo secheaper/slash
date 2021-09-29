@@ -15,7 +15,7 @@ Slash is a command line tool that scrapes the most popular e-commerce websites t
 - **Easy**: Slash uses very easy commands to filter, sort and search your items
 - **Powerful**: Quickly alter the commands to get desired results
 
-Quick Links :: [Install](#installation) :: [Examples](#some-examples) :: [Why Slash](#why) :: [Contributors](#contributors)
+Quick Links :: [Install](#installation) :: [Flags & Arg](#flags-and-command-line-arguments) :: [Examples](#some-examples) :: [Why Slash](#why) :: [Contributors](#contributors)
 
 ---
 
@@ -40,13 +40,16 @@ cd src
 python3 slash.py --search "philips hue"
 ```
 
-Why
+Flags and Command Line Arguments
 ---
-- In a market where we are spoilt for choices, we often look for the best deals.  
-- The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
-- The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
-- E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
-- This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
+Currently the tool supports the following flags and command line arguments. These flags and arguments can be used to quickly filter and guide the search to get you the best results very quickly.
+
+| Arguments | Type | Default | Description                                                          |
+|-----------|------|---------|----------------------------------------------------------------------|
+| --search  | str  | None    | The product name to be used as the search query                      |
+| --num     | int  | 3       | Maximum number of products to search                                 |
+| --sort    | str  | re      | Sort results by relevance (re) or by price (pr)                      |
+| --des     | bool | -       | Set boolean flag if results should be sorted in non-increasing order |
 
 Some Examples
 ---
@@ -67,6 +70,15 @@ Slash returns the prices for the searched items from e-commerce websites in a ta
 | 28/09/2021 09:03:49 | Apple AirPods with Charging Case (Latest... | $119.00 | walmart   |
 | 28/09/2021 09:03:49 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
 ```
+
+Why
+---
+- In a market where we are spoilt for choices, we often look for the best deals.  
+- The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
+- The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
+- E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
+- This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
+
 
 ## Contributors
 
