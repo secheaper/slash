@@ -15,7 +15,18 @@ Slash is a command line tool that scrapes the most popular e-commerce websites t
 - **Easy**: Slash uses very easy commands to filter, sort and search your items
 - **Powerful**: Quickly alter the commands to get desired results
 
-Quick Links :: [Install](#installation) :: [Flags & Arg](#flags-and-command-line-arguments) :: [Examples](#some-examples) :: [Why Slash](#why) :: [Contributors](#contributors)
+<p align="center">
+  <a href="#rocket-installation">Installation</a>
+  ::
+  <a href="#golf-flags-and-command-line-arguments">Flags & Args</a>
+  ::
+  <a href="#card_index_dividers-some-examples">Examples</a>
+  ::
+  <a href="#page_facing_up-why">Why</a>
+  ::
+  <a href="#sparkles-contributors">Contributors</a>
+  
+</p>
 
 ---
 
@@ -23,7 +34,7 @@ Quick Links :: [Install](#installation) :: [Flags & Arg](#flags-and-command-line
 
 ---
 
-Installation
+:rocket: Installation
 ---
 1. Clone the Github repository to a desired location on your computer. You will need [git](https://git-scm.com/) to be preinstalled on your machine. Once the repository is cloned, you will then ```cd``` into the local repository.
 ```
@@ -39,8 +50,7 @@ pip install -r requirements.txt
 cd src
 python3 slash.py --search "philips hue"
 ```
-
-Flags and Command Line Arguments
+:golf: Flags and Command Line Arguments
 ---
 Currently the tool supports the following flags and command line arguments. These flags and arguments can be used to quickly filter and guide the search to get you the best results very quickly.
 
@@ -51,7 +61,7 @@ Currently the tool supports the following flags and command line arguments. Thes
 | --sort    | str  | re      | Sort results by relevance (re) or by price (pr)                      |
 | --des     | bool | -       | Set boolean flag if results should be sorted in non-increasing order |
 
-Some Examples
+:card_index_dividers: Some Examples
 ---
 Pass any search string to Slash. It can be called by the following command
 ```
@@ -71,7 +81,7 @@ Slash returns the prices for the searched items from e-commerce websites in a ta
 | 28/09/2021 09:03:49 | Apple AirPods with Wireless Charging Cas... | $159.98 | walmart   |
 ```
 
-Why
+:page_facing_up: Why
 ---
 - In a market where we are spoilt for choices, we often look for the best deals.  
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
@@ -80,7 +90,8 @@ Why
 - This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
 
 
-## Contributors
+:sparkles: Contributors
+---
 
 <table>
   <tr>
