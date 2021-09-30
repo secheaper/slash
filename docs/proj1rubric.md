@@ -93,7 +93,7 @@ Sr. No| Notes|Self-assement|Evidence|
 87| Is your contributions' policy publicly available? | Yes (3) | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
 88| Do contributors keep the copyright/IP of their contributions | ||
 89| Website and documentation clearly states the copyright owners of your software and documentation | ||
-90| Do each of your source code files include a copyright statement | ||
+90| Do each of your source code files include a copyright statement | Yes (3) | Can be seen in all the python codes |
 91| The website and documentation clearly state the licence of your software | 3 | https://github.com/secheaper/slash/blob/main/LICENSE |
 92| Software released under an open source licence | Yes (3) | https://github.com/secheaper/slash/blob/main/LICENSE |
 93| Software released under an OSI-approved open-source licence | Yes (3) | https://github.com/secheaper/slash/blob/main/LICENSE |
