@@ -1,15 +1,5 @@
 import formatter
-import math
-import formatter
 from bs4 import BeautifulSoup
-
-def test_formatSearchQuery():
-    """
-    Checks the formatSearchQuery function
-    """
-    assert formatter.formatSearchQuery("1 2") == "1+2"
-    assert formatter.formatSearchQuery("A B") == "A+B"
-    assert formatter.formatSearchQuery("ABC") == "ABC"
 
 def test_sortList():
     """
@@ -20,21 +10,6 @@ def test_sortList():
     revAnsArr = [{"price":"$20"}, {"price":"$10"}, {"price":"$0"}]
     assert formatter.sortList(arr, "pr", False) == ansArr
     assert formatter.sortList(arr, "pr", True) == revAnsArr
-
-def test_formatTitle():
-    """
-    Checks the formatTitle function
-    """
-    assert formatter.formatTitle("0"*50) == "0"*40+"..."
-    assert formatter.formatTitle("0"*5) == "0"*5
-
-def test_getNumbers():
-    """
-    Checks the getNumbers function
-    """
-    assert formatter.getNumbers("some chars and $10.00") == 10.0
-    assert formatter.getNumbers("some chars and $10.99 some other chars") == 10.99
-    assert formatter.getNumbers("") == math.inf
 
 def test_formatResults():
     """
