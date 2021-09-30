@@ -2,8 +2,8 @@
 # Project 1 Rubric
 
 
-Sr. No| Notes|Self-assement|evidence|
-|----|--------|------|--------|
+Sr. No| Notes|Self-assement|Evidence|
+|----|--------|------|-------|
 1| workload is spread over the whole team (one team member is often Xtimes more productive than the others... | 3 | All contributors have made significant commits in the codebase. (https://github.com/secheaper/slash/graphs/contributors) |
 2| but nevertheless, here is a track record that everyone is contributing a lot)|3|https://github.com/secheaper/slash/pulse|
 3| Number of commits|3|https://github.com/secheaper/slash/pulse|
