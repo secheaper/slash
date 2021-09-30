@@ -22,9 +22,13 @@ Slash is a command line tool that scrapes the most popular e-commerce websites t
   ::
   <a href="#card_index_dividers-some-examples">Examples</a>
   ::
+  <a href="#thought_balloon-use-case">Use Case</a>
+  ::
   <a href="#page_facing_up-why">Why</a>
   ::
   <a href="#sparkles-contributors">Contributors</a>
+    ::
+  <a href="#email-support">Support</a>
   
 </p>
 
@@ -137,10 +141,10 @@ python3 slash.py --search socks --num 5
 | 29/09/2021 14:13:46 | Aerosoles Women's Low Cut Socks, 10-Pack    | $10.00  | walmart   |
 ```
 
-Use Case
+:thought_balloon: Use Case
 ---
-* Students: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.
-* Data Analysts: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
+* ***Students***: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.
+* ***Data Analysts***: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
 :page_facing_up: Why
 ---
