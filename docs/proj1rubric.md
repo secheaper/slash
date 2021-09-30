@@ -4,7 +4,7 @@
 
 Sr. No| Notes|Self-assement|evidence|
 |----|--------|------|--------|
-1| workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
+1| workload is spread over the whole team (one team member is often Xtimes more productive than the others... | 3 | All contributors have made significant commits in the codebase. (https://github.com/secheaper/slash/graphs/contributors) |
 2| but nevertheless, here is a track record that everyone is contributing a lot)|3|https://github.com/secheaper/slash/pulse|
 3| Number of commits|3|https://github.com/secheaper/slash/pulse|
 4| Number of commits: by different people|3|https://github.com/secheaper/slash/pulse|
@@ -15,7 +15,7 @@ Sr. No| Notes|Self-assement|evidence|
 9|Docs: what: point descriptions of each class/function (in isolation) |3|Functions and modules use docstring. [Example](https://github.com/secheaper/slash/blob/main/docs/proj1rubric.md)|
 10|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|[Examples](https://github.com/secheaper/slash/blob/main/README.md#card_index_dividers-some-examples)|
 11|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|[Section in README](https://github.com/secheaper/slash#page_facing_up-why)|
-12|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|https://github.com/secheaper/slash/blob/main/assets/demo.gif|
+12|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|https://github.com/secheaper/slash/blob/main/assets/demo.gif | 
 13| Use of version control tools|3|Git is used thoroughly through the project|
 14| Use of  style checkers |0|config files in GH showing your config|
 15| Use of code  formatters. |0||
@@ -39,35 +39,35 @@ Sr. No| Notes|Self-assement|evidence|
 33| Project name unique | 3 | Slash was derived from "slashing" prices down or reducing the prices of a product. |
 34| Project name free from trademark violations | 3 | We verified that "slash" has not been trademarked by any python repository or any US company. |
 35| Software available as a package that can be deployed without building it | ||
-36| Software available for free | 3 ||
+36| Software available for free | 3 | Our repository is public and can be clone and used by anyone. (https://github.com/secheaper/slash) |
 37| Source code publicly available to download, either as a downloadable bundle or via access to a source code repository | 3 ||
 38| Software hosted in an established, third-party repository likeGitHub (https://github.com) | 3 ||
-39| Documentation clearly available on your website or within your software | 3 ||
-40| Documentation includes a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use | 3 ||
-41| Providing more extensive documentation, that gives a clear, step-by-step instructions on how to deploy and use our software | 3 ||
-42| Comprehensive guide to all your software’s commands, functions and options| 1 | Not yet accomplished|
+39| Documentation clearly available within your software | 3 | https://github.com/secheaper/slash#readme |
+40| Documentation includes a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use | 3 | https://github.com/secheaper/slash#readme |
+41| Providing more extensive documentation, that gives a clear, step-by-step instructions on how to deploy and use our software | 3 | https://github.com/secheaper/slash#readme |
+42| Comprehensive guide to all your software’s commands, functions and options| 3 | We have defined one use case of each command or function that can be performed by our code. https://github.com/secheaper/slash#readme |
 43| Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages| 0 | NA |
 44| If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation| 1 |Kept as future scope|
-45| Documentation stored under revision control with source code| 3 ||
-46| Publishing the release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation | 2 ||
-47| Software describes how a user can get help with using your software | ||
-48| Our documentation describes what support we provide to users and developers | ||
+45| Documentation stored under revision control with source code| 3 | https://github.com/secheaper/slash/blame/main/README.md |
+46| Publishing the release history e.g. release data, version numbers, key features of each release etc. in your documentation | 3 | https://github.com/secheaper/slash/releases/tag/v1.0.0 |
+47| Software describes how a user can get help with using your software | 3 | https://github.com/secheaper/slash#readme |
+48| Our documentation describes what support we provide to users and developers | 3 | https://github.com/secheaper/slash#readme |
 49| Project has an e-mail address or forum that is solely for supporting users | Yes | secheaper@gmail.com |
 50| E-mails to our support e-mail address are received by more than one person | Yes | we all have the access credentials to the support email | 
 51| Project have a ticketing system to manage bug reports and feature requests | Yes | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
 52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | Yes | It's an open link on our public repo (https://github.com/secheaper/slash/projects/1) |
 53| Software’s architecture and design is modular | ||
-54| Software uses an accepted coding standard or convention | ||
+54| Software uses an accepted coding standard or convention | | https://github.com/secheaper/slash/blob/main/CODE-OF-CONDUCT.md |
 55| Software allows data to be imported and exported using open data formats | ||
 56| Software allows communications using open communications protocols | ||
 57| Software cross-platform compatible | Yes | The only thing needed is python. It will work on all operating systems that have python. |
 58| Software adhere to appropriate accessibility conventions or standards | ||
-59| Documentation adheres to appropriate accessibility conventions or standards | ||
+59| Documentation adheres to appropriate accessibility conventions or standards | 2 ||
 60| Each source code releases a snapshot of the repository | ||
 61| Releases are tagged in the repository | Yes | https://github.com/secheaper/slash/releases/tag/v1.0.0 |
-62| There is a branch of the repository that is always stable | Yes | the main branch is always stable|
+62| There is a branch of the repository that is always stable | Yes | the main branch is always stable |
 63| Back-up your repository | ||
-64| Provide publicly available instructions for building the software from the source code | ||
+64| Provide publicly available instructions for building the software from the source code |  ||
 65| Build, or package, the software using an automated tool | ||
 66| Provide publicly-available instructions for deploying the software | ||
 67| Documentation list all third-party dependencies | ||
@@ -75,15 +75,15 @@ Sr. No| Notes|Self-assement|evidence|
 69| Software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional | ||
 70| Download dependencies using a dependency management tool or package manager | ||
 71| Tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful | ||
-72| Automated test suite for your software | ||
+72| Automated test suite for your software | 3 | https://github.com/secheaper/slash/tree/main/tests |
 73| Framework to periodically (e.g. nightly) run your tests on the latest version of the source code | ||
-74| Using continuous integration, automatically running tests whenever changes are made to your source code | ||
-75| Test results publicly visible | ||
+74| Using continuous integration, automatically running tests whenever changes are made to your source code | 3 | https://github.com/secheaper/slash/actions/workflows/workflow.yml |
+75| Test results publicly visible | 3 | https://github.com/secheaper/slash/actions/workflows/workflow.yml |
 76| Manually-run tests documented | ||
 77| Project has resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software | ||
-78| Website states how many projects and users are associated with your project | ||
+78| Documentation states how many projects and users are associated with your project | 3 | https://github.com/secheaper/slash/actions/workflows/workflow.yml |
 79| Provide success stories on your website | ||
-80| Listing the important partners and collaborators on our website | ||
+80| Listing the important partners and collaborators in our documentation | 3 | https://github.com/secheaper/slash/actions/workflows/workflow.yml |
 81| Listing the project's publications on our website or link to a resource where these are available | ||
 82| Listing third-party publications that refer to the software on our website or link to a resource where these are available | ||
 83| Users can subscribe to notifications to changes to your source code repository | ||
