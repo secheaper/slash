@@ -163,3 +163,8 @@ Use Case
     <td align="center"><a href="https://github.com/annie0467"><img src="https://avatars.githubusercontent.com/u/17164255?v=4" width="75px;" alt=""/><br /><sub><b>Anushi Keswani</b></sub></a><br /></td>
   </tr>
 </table>
+
+:email: Support
+---
+
+For any quries and help, please reach out to us at: secheaper@gmail.com
