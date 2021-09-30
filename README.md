@@ -124,21 +124,21 @@ The maximum number of results that are scraped from each website can be set usin
 an integer value ```n``` and then returns ```n``` results from each website. Note that tool returns a maximum of 
 the value of ```n``` and the number of results on the webiste. By default this value is set to 3. Example:
 ```
-python3 slash.py --search socks --num 5
+python3 slash.py --search "philips hue" --num 5
 ```
 ```
 | timestamp           | title                                       | price   | website   |
 |---------------------|---------------------------------------------|---------|-----------|
-| 29/09/2021 14:13:45 | Men's 6 Pack Ankle Running Socks Low Cut... | $15.95  | amazon    |
-| 29/09/2021 14:13:45 | 6 Pack Women's Ankle Running Socks, Low ... | $15.95  | amazon    |
-| 29/09/2021 14:13:45 | UltraGlide Friction-Free No-Show Running... | $17.00  | amazon    |
-| 29/09/2021 14:13:45 | u&i Men's Performance Cushion Cotton Ath... | $19.99  | amazon    |
-| 29/09/2021 14:13:45 | Mens Cushioned Work Socks 10 Pairs          | $12.10  | amazon    |
-| 29/09/2021 14:13:46 | Gildan Adult Men's Performance Cotton mo... | $10.97  | walmart   |
-| 29/09/2021 14:13:46 | Reebok Women's Lightweight Low Cut Socks... | $8.97   | walmart   |
-| 29/09/2021 14:13:46 | Athletic Works Men's Ankle Socks 12 Pack    | $9.97   | walmart   |
-| 29/09/2021 14:13:46 | Athletic Works Men's Crew Socks 12 Pack     | $9.97   | walmart   |
-| 29/09/2021 14:13:46 | Aerosoles Women's Low Cut Socks, 10-Pack    | $10.00  | walmart   |
+| 30/09/2021 12:07:41 | Govee Immersion TV LED Backlights with C... | $82.99  | amazon    |
+| 30/09/2021 12:07:41 | Philips Hue 548610 CFH Smart Light A19, ... | $79.99  | amazon    |
+| 30/09/2021 12:07:41 | Philips Hue Play White & Color Smart Lig... | $149.99 | amazon    |
+| 30/09/2021 12:07:41 | Philips Hue White and Color Iris Corded ... | $99.99  | amazon    |
+| 30/09/2021 12:07:41 | Philips Hue White & Color E12 LED Candle... | $49.97  | amazon    |
+| 30/09/2021 12:07:42 | Philips Hue 3-Pack 60W White Bluetooth S... | $37.88  | walmart   |
+| 30/09/2021 12:07:42 | Philips Hue Smart Stand Alone Bridge, Hu... | $57.92  | walmart   |
+| 30/09/2021 12:07:42 | Philips Hue White and Color Ambiance Sma... | $89.99  | walmart   |
+| 30/09/2021 12:07:42 | Philips Hue White and Color Ambiance Sma... | $29.99  | walmart   |
+| 30/09/2021 12:07:42 | Philips Hue White and Color Ambiance A19... | $199.99 | walmart   |
 ```
 
 :thought_balloon: Use Case
