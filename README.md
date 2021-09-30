@@ -143,7 +143,7 @@ python3 slash.py --search socks --num 5
 
 :thought_balloon: Use Case
 ---
-* ***Students***: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.
+* ***Students***: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
 * ***Data Analysts***: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
 :page_facing_up: Why
@@ -173,4 +173,4 @@ python3 slash.py --search socks --num 5
 :email: Support
 ---
 
-For any quries and help, please reach out to us at: secheaper@gmail.com
+For any queries and help, please reach out to us at: secheaper@gmail.com
