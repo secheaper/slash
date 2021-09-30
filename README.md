@@ -90,17 +90,17 @@ python3 slash.py --search "philips hue"
 after scraping. The first value is used to initially sort and filter the results of the scraping. The arguments
 following the first one are not required but will be used to further sort the filtered results. Example:
 ```
-python3 slash.py --search socks --sort pr
+python3 slash.py --search "philips hue" --sort pr
 ```
 ```
-| timestamp           | title                                       | price      | website   |
-|---------------------|---------------------------------------------|------------|-----------|
-| 29/09/2021 14:06:38 | Fruit of the Loom Boys Dual Defense Cush... | $7.97      | walmart   |
-| 29/09/2021 14:06:37 | womens Active 6 Pair Pack Socks             | $7.99      | amazon    |
-| 29/09/2021 14:06:37 | womens 6-pair Lightweight Breathable Ven... | $8.97      | amazon    |
-| 29/09/2021 14:06:38 | Reebok Women's Lightweight Low Cut Socks... | $8.97      | walmart   |
-| 29/09/2021 14:06:38 | Hanes Women's Cool Comfort Sport Ankle S... | From $8.97 | walmart   |
-| 29/09/2021 14:06:37 | Women's 6 Pack Runner Socks                 | $9.66      | amazon    |
+| timestamp           | title                                       | price   | website   |
+|---------------------|---------------------------------------------|---------|-----------|
+| 30/09/2021 12:02:34 | Philips Hue White A19 60W Smart Dimmable... | $14.88  | walmart   |
+| 30/09/2021 12:02:33 | T POWER 24V Ac Dc Adapter Charger Compat... | $16.99  | amazon    |
+| 30/09/2021 12:02:33 | Philips Hue 1748930VN 8ft Cable Connecto... | $19.99  | amazon    |
+| 30/09/2021 12:02:32 | PARMIDA LED 5/6 inch Smart Recessed Ligh... | $20.99  | amazon    |
+| 30/09/2021 12:02:34 | Philips Hue White Ambiance A19 Smart Lig... | $24.99  | walmart   |
+| 30/09/2021 12:02:34 | Philips Hue White and Color Ambiance Sma... | $29.99  | walmart   |
 ```
 #### 3. Sort Order
 The ```--des``` flag can be set to sort the requested products in a non-increasing order. This flag will be 
