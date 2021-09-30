@@ -19,7 +19,7 @@ Sr. No| Notes|Self-assement|Evidence|
 13| Use of version control tools|3|Git is used thoroughly through the project|
 14| Use of  style checkers |0|config files in GH showing your config|
 15| Use of code  formatters. |0||
-16| Use of syntax checkers. |2|https://github.com/secheaper/slash/blob/main/.github/workflows/python-app.yml|
+16| Use of syntax checkers. | 3 |https://github.com/secheaper/slash/blob/main/.github/workflows/python-app.yml|
 17| Use of code coverage |3|https://github.com/secheaper/slash/blob/main/.github/workflows/workflow.yml|
 18| other automated analysis tools|0||
 19| test cases exist|3|https://github.com/secheaper/slash/blob/main/tests/test_app.py|
@@ -27,15 +27,15 @@ Sr. No| Notes|Self-assement|Evidence|
 21| the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2|https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md|
 22| issues are discussed before they are closed|1||
 23| Chat channel: exists|3|https://discord.gg/K4khCZGR|
-24| test cases:.a large proportion of the issues related to handling failing cases.|2|if a test case fails, open an issue and fix it|
-25| evidence that the whole team is using the same tools: everyone can get to all tools and files | 2 | We can clearly see that entire codebase has been written in Python(https://github.com/secheaper/slash/search?l=python). Everyone has the same access to the repository and also have equal access to comitting directly to the main branch. |
-26| evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|2||
-27| evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|2| https://github.com/secheaper/slash/graphs/contributors |
-28| Evidence that the members of the team are working across multiple places in the code base | 2 | https://github.com/secheaper/slash/graphs/contributors |
-29| short release cycles | 2 |(hard to see in short projects) project members are committing often enough so that everyone can get your work|
+24| test cases:.a large proportion of the issues related to handling failing cases.| 3 |if a test case fails, open an issue and fix it|
+25| evidence that the whole team is using the same tools: everyone can get to all tools and files | 3 | We can clearly see that entire codebase has been written in Python(https://github.com/secheaper/slash/search?l=python). Everyone has the same access to the repository and also have equal access to comitting directly to the main branch. |
+26| evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 3 ||
+27| evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| 3 | https://github.com/secheaper/slash/graphs/contributors |
+28| Evidence that the members of the team are working across multiple places in the code base | 3 | https://github.com/secheaper/slash/graphs/contributors |
+29| short release cycles | 3 |(hard to see in short projects) project members are committing often enough so that everyone can get your work|
 30| Documentation provides clear overview of software and uses | 3 | https://github.com/secheaper/slash#readme |
 31| Website and documentation clearly describe the type of user who should use your software | 3 | https://github.com/secheaper/slash#readme |
-32| Case studies to show how software is used by us| 2 | provided Gif in the README.md |
+32| Case studies to show how software is used by us | 3 | provided Gif in the README.md |
 33| Project name unique | 3 | Slash was derived from "slashing" prices down or reducing the prices of a product. |
 34| Project name free from trademark violations | 3 | We verified that "slash" has not been trademarked by any python repository or any US company. |
 35| Software available as a package that can be deployed without building it | ||
@@ -52,20 +52,20 @@ Sr. No| Notes|Self-assement|Evidence|
 46| Publishing the release history e.g. release data, version numbers, key features of each release etc. in your documentation | 3 | https://github.com/secheaper/slash/releases/tag/v1.0.0 |
 47| Software describes how a user can get help with using your software | 3 | https://github.com/secheaper/slash#readme |
 48| Our documentation describes what support we provide to users and developers | 3 | https://github.com/secheaper/slash#readme |
-49| Project has an e-mail address or forum that is solely for supporting users | Yes | secheaper@gmail.com |
-50| E-mails to our support e-mail address are received by more than one person | Yes | we all have the access credentials to the support email | 
-51| Project have a ticketing system to manage bug reports and feature requests | Yes | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
-52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | Yes | It's an open link on our public repo (https://github.com/secheaper/slash/projects/1) |
-53| Software’s architecture and design is modular | ||
-54| Software uses an accepted coding standard or convention | | https://github.com/secheaper/slash/blob/main/CODE-OF-CONDUCT.md |
-55| Software allows data to be imported and exported using open data formats | ||
+49| Project has an e-mail address or forum that is solely for supporting users | Yes (3) | secheaper@gmail.com |
+50| E-mails to our support e-mail address are received by more than one person | Yes (3) | we all have the access credentials to the support email | 
+51| Project have a ticketing system to manage bug reports and feature requests | Yes (3) | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
+52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | Yes (3) | It's an open link on our public repo (https://github.com/secheaper/slash/projects/1) |
+53| Software’s architecture and design is modular | Yes (3) ||
+54| Software uses an accepted coding standard or convention | Yes (3) | https://github.com/secheaper/slash/blob/main/CODE-OF-CONDUCT.md, https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+55| Software allows data to be imported and exported using open data formats | 1 | To be added in future |
 56| Software allows communications using open communications protocols | ||
-57| Software cross-platform compatible | Yes | The only thing needed is python. It will work on all operating systems that have python. |
+57| Software cross-platform compatible | Yes (3) | The only thing needed is python. It will work on all operating systems that have python. |
 58| Software adhere to appropriate accessibility conventions or standards | ||
 59| Documentation adheres to appropriate accessibility conventions or standards | 2 ||
 60| Each source code releases a snapshot of the repository | ||
-61| Releases are tagged in the repository | Yes | https://github.com/secheaper/slash/releases/tag/v1.0.0 |
-62| There is a branch of the repository that is always stable | Yes | the main branch is always stable |
+61| Releases are tagged in the repository | Yes (3) | https://github.com/secheaper/slash/releases/tag/v1.0.0 |
+62| There is a branch of the repository that is always stable | Yes (3) | the main branch is always stable |
 63| Back-up your repository | ||
 64| Provide publicly available instructions for building the software from the source code |  ||
 65| Build, or package, the software using an automated tool | ||
@@ -88,16 +88,16 @@ Sr. No| Notes|Self-assement|Evidence|
 82| Listing third-party publications that refer to the software on our website or link to a resource where these are available | ||
 83| Users can subscribe to notifications to changes to your source code repository | 2 | Each contributor gets an email when any issues they are assigned gets an update. |
 84| Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model | ||
-85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes | We received a Pull Request from someone outside of our project fixing one of our issues (https://github.com/secheaper/slash/pull/15). He was simply browsing Github and came across our repo when he searched for the "good-first-issue" keyword. | 
-86| Do you have a contributions policy | Yes | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
-87| Is your contributions' policy publicly available? | Yes | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes (3) | We received a Pull Request from someone outside of our project fixing one of our issues (https://github.com/secheaper/slash/pull/15). He was simply browsing Github and came across our repo when he searched for the "good-first-issue" keyword. | 
+86| Do you have a contributions policy | Yes (3) | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+87| Is your contributions' policy publicly available? | Yes (3) | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
 88| Do contributors keep the copyright/IP of their contributions | ||
 89| Website and documentation clearly states the copyright owners of your software and documentation | ||
 90| Do each of your source code files include a copyright statement | ||
 91| The website and documentation clearly state the licence of your software | 3 | https://github.com/secheaper/slash/blob/main/LICENSE |
-92| Software released under an open source licence | Yes | https://github.com/secheaper/slash/blob/main/LICENSE |
-93| Software released under an OSI-approved open-source licence | Yes | https://github.com/secheaper/slash/blob/main/LICENSE |
-94| Source code files include a licence header | Yes | MIT License(https://github.com/secheaper/slash/blob/main/LICENSE) |
+92| Software released under an open source licence | Yes (3) | https://github.com/secheaper/slash/blob/main/LICENSE |
+93| Software released under an OSI-approved open-source licence | Yes (3) | https://github.com/secheaper/slash/blob/main/LICENSE |
+94| Source code files include a licence header | Yes (3) | MIT License(https://github.com/secheaper/slash/blob/main/LICENSE) |
 95| Recommended citation for your software | ||
 96| Documentation includes a project roadmap (a list of project and development milestones for the next 3, 6 months) | ||
 97| Documentation describe how the project is funded, and the period over which funding is guaranteed? | ||

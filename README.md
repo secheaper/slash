@@ -153,6 +153,8 @@ python3 slash.py --search socks --num 5
 - The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
 - E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
 - This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
+- Slash in its current form is for people who have some understanding of python and are comfortable in using the command line interface to interact with systems.
+- Future updates aim to encompass a wide variety of users irrespective of their computer knowledge and background.
 
 
 :sparkles: Contributors
