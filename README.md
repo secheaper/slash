@@ -106,17 +106,17 @@ python3 slash.py --search "philips hue" --sort pr
 The ```--des``` flag can be set to sort the requested products in a non-increasing order. This flag will be 
 actually used when coupled with ```--sort```. Example:
 ```
-python3 slash.py --search socks --sort pr --des
+python3 slash.py --search "philips hue" --sort pr --des
 ```
 ```
 | timestamp           | title                                       | price   | website   |
 |---------------------|---------------------------------------------|---------|-----------|
-| 29/09/2021 14:10:21 | Performance Cushion Crew Socks with Band... | $38.40  | amazon    |
-| 29/09/2021 14:10:21 | 6-pk. Performance Cotton Crew Socks Size... | $34.50  | amazon    |
-| 29/09/2021 14:10:21 | Womens Bulk 36 Pack Ultimate Athletic Sp... | $29.95  | amazon    |
-| 29/09/2021 14:10:22 | Woman's 6 Pack Thick Thermal Crew Cold W... | $19.99  | walmart   |
-| 29/09/2021 14:10:22 | Jobsite's Men's Fast Dry Shrink Resistan... | $19.44  | walmart   |
-| 29/09/2021 14:10:22 | Gildan Adult Men's Performance Cotton mo... | $10.97  | walmart   |
+| 30/09/2021 12:03:42 | Philips Hue Bluetooth Smart Lightstrip P... |         | amazon    |
+| 30/09/2021 12:03:42 | Philips - Hue Play HDMI Sync Box - Black... |         | amazon    |
+| 30/09/2021 12:03:42 | Lutron Aurora Smart Bulb Dimmer Switch |... |         | amazon    |
+| 30/09/2021 12:03:44 | Philips Hue White and Color Ambiance A19... | $199.99 | walmart   |
+| 30/09/2021 12:03:44 | Philips Hue White and Color Ambiance 2-P... | $105.87 | walmart   |
+| 30/09/2021 12:03:44 | Philips Hue White and Color Ambiance Sma... | $89.99  | walmart   |
 ```
 
 #### 4. Result length
