@@ -73,17 +73,17 @@ Currently the tool supports the following flags and command line arguments. Thes
 the e-commerce websites. So, to use this, run the python script followed by the --search argument and the 
 search string. The search string should be in double quotes if it have two or more words. Example:
 ```
-python3 slash.py --search socks
+python3 slash.py --search "philips hue"
 ```
 ```
 | timestamp           | title                                       | price   | website   |
 |---------------------|---------------------------------------------|---------|-----------|
-| 29/09/2021 14:00:55 | Men's 6 Pack Ankle Running Socks Low Cut... | $15.95  | amazon    |
-| 29/09/2021 14:00:55 | 6 Pack Women's Ankle Running Socks, Low ... | $15.95  | amazon    |
-| 29/09/2021 14:00:55 | UltraGlide Friction-Free No-Show Running... | $17.00  | amazon    |
-| 29/09/2021 14:00:57 | Gildan Adult Men's Performance Cotton mo... | $10.97  | walmart   |
-| 29/09/2021 14:00:57 | Reebok Women's Lightweight Low Cut Socks... | $8.97   | walmart   |
-| 29/09/2021 14:00:57 | Athletic Works Men's Ankle Socks 12 Pack    | $9.97   | walmart   |
+| 30/09/2021 12:00:58 | Philips Hue White and Color Ambiance A19... | $134.99 | amazon    |
+| 30/09/2021 12:00:58 | PARMIDA LED 5/6 inch Smart Recessed Ligh... | $20.99  | amazon    |
+| 30/09/2021 12:00:58 | Philips Hue 548610 CFH Smart Light A19, ... | $79.99  | amazon    |
+| 30/09/2021 12:01:00 | Philips Hue 3-Pack 60W White Bluetooth S... | $37.88  | walmart   |
+| 30/09/2021 12:01:00 | Philips Hue Smart Stand Alone Bridge, Hu... | $57.92  | walmart   |
+| 30/09/2021 12:01:00 | Philips Hue White and Color Ambiance Sma... | $89.99  | walmart   |
 ```
 #### 2. Sorting
 ```--sort``` accepts one or more arguments that determine how the tool sorts and filters the requested products
