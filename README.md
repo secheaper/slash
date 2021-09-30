@@ -111,7 +111,7 @@ python3 slash.py --search socks --sort pr --des
 ```
 | timestamp           | title                                       | price   | website   |
 |---------------------|---------------------------------------------|---------|-----------|
-| 29/09/2021 14:10:21 | Performance Cushion Crew Socks with Band... |         | amazon    |
+| 29/09/2021 14:10:21 | Performance Cushion Crew Socks with Band... | $38.40  | amazon    |
 | 29/09/2021 14:10:21 | 6-pk. Performance Cotton Crew Socks Size... | $34.50  | amazon    |
 | 29/09/2021 14:10:21 | Womens Bulk 36 Pack Ultimate Athletic Sp... | $29.95  | amazon    |
 | 29/09/2021 14:10:22 | Woman's 6 Pack Thick Thermal Crew Cold W... | $19.99  | walmart   |
