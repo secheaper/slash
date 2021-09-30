@@ -52,7 +52,7 @@ pip3 install -r requirements.txt
 4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the python command to run the ```slash.py``` file.
 ```
 cd src
-python3 slash.py --search "philips hue"
+python3 slash.py --search socks
 ```
 :golf: Flags and Command Line Arguments
 ---
