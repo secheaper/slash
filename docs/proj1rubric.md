@@ -86,7 +86,7 @@ Sr. No| Notes|Self-assement|evidence|
 80| Listing the important partners and collaborators in our documentation | 3 | https://github.com/secheaper/slash/actions/workflows/workflow.yml |
 81| Listing the project's publications on our website or link to a resource where these are available | ||
 82| Listing third-party publications that refer to the software on our website or link to a resource where these are available | ||
-83| Users can subscribe to notifications to changes to your source code repository | ||
+83| Users can subscribe to notifications to changes to your source code repository | 2 | Each contributor gets an email when any issues they are assigned gets an update. |
 84| Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model | ||
 85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes | We received a Pull Request from someone outside of our project fixing one of our issues (https://github.com/secheaper/slash/pull/15). He was simply browsing Github and came across our repo when he searched for the "good-first-issue" keyword. | 
 86| Do you have a contributions policy | Yes | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
@@ -94,10 +94,10 @@ Sr. No| Notes|Self-assement|evidence|
 88| Do contributors keep the copyright/IP of their contributions | ||
 89| Website and documentation clearly states the copyright owners of your software and documentation | ||
 90| Do each of your source code files include a copyright statement | ||
-91| The website and documentation clearly state the licence of your software | ||
-92| Software released under an open source licence | Yes ||
-93| Software released under an OSI-approved open-source licence | Yes ||
-94| Source code files include a licence header | Yes | MIT License |
+91| The website and documentation clearly state the licence of your software | 3 | https://github.com/secheaper/slash/blob/main/LICENSE |
+92| Software released under an open source licence | Yes | https://github.com/secheaper/slash/blob/main/LICENSE |
+93| Software released under an OSI-approved open-source licence | Yes | https://github.com/secheaper/slash/blob/main/LICENSE |
+94| Source code files include a licence header | Yes | MIT License(https://github.com/secheaper/slash/blob/main/LICENSE) |
 95| Recommended citation for your software | ||
 96| Documentation includes a project roadmap (a list of project and development milestones for the next 3, 6 months) | ||
 97| Documentation describe how the project is funded, and the period over which funding is guaranteed? | ||
