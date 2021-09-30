@@ -40,7 +40,7 @@ Sr. No| Notes|Self-assement|Evidence|
 34| Project name free from trademark violations | 3 | We verified that "slash" has not been trademarked by any python repository or any US company. |
 35| Software available as a package that can be deployed without building it | ||
 36| Software available for free | 3 | Our repository is public and can be clone and used by anyone. (https://github.com/secheaper/slash) |
-37| Source code publicly available to download, either as a downloadable bundle or via access to a source code repository | 3 ||
+37| Source code publicly available to download, either as a downloadable bundle or via access to a source code repository | 3 || git clone https://github.com/secheaper/slash.git or Download as a zip file from here https://github.com/secheaper/slash/archive/refs/heads/main.zip |
 38| Software hosted in an established, third-party repository likeGitHub (https://github.com) | 3 ||
 39| Documentation clearly available within your software | 3 | https://github.com/secheaper/slash#readme |
 40| Documentation includes a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use | 3 | https://github.com/secheaper/slash#readme |
