@@ -56,9 +56,9 @@ Sr. No| Notes|Self-assement|Evidence|
 50| E-mails to our support e-mail address are received by more than one person | Yes (3) | we all have the access credentials to the support email | 
 51| Project have a ticketing system to manage bug reports and feature requests | Yes (3) | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
 52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | Yes (3) | It's an open link on our public repo (https://github.com/secheaper/slash/projects/1) |
-53| Software’s architecture and design is modular | ||
-54| Software uses an accepted coding standard or convention | | https://github.com/secheaper/slash/blob/main/CODE-OF-CONDUCT.md |
-55| Software allows data to be imported and exported using open data formats | ||
+53| Software’s architecture and design is modular | Yes (3) ||
+54| Software uses an accepted coding standard or convention | Yes (3) | https://github.com/secheaper/slash/blob/main/CODE-OF-CONDUCT.md, https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+55| Software allows data to be imported and exported using open data formats | 1 | To be added in future |
 56| Software allows communications using open communications protocols | ||
 57| Software cross-platform compatible | Yes (3) | The only thing needed is python. It will work on all operating systems that have python. |
 58| Software adhere to appropriate accessibility conventions or standards | ||
