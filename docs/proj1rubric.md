@@ -53,8 +53,8 @@ Sr. No| Notes|Self-assement|Evidence|
 47| Software describes how a user can get help with using your software | 3 | https://github.com/secheaper/slash#readme |
 48| Our documentation describes what support we provide to users and developers | 3 | https://github.com/secheaper/slash#readme |
 49| Project has an e-mail address or forum that is solely for supporting users | 3 | secheaper@gmail.com |
-50| E-mails to our support e-mail address are received by more than one person | Yes (3) | we all have the access credentials to the support email | 
-51| Project have a ticketing system to manage bug reports and feature requests | Yes (3) | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
+50| E-mails to our support e-mail address are received by more than one person | 3 | we all have the access credentials to the support email | 
+51| Project have a ticketing system to manage bug reports and feature requests | 3 | We constantly create issues and have an ticketing  system  on github projects where we assign each member an issue based on priority. (https://github.com/secheaper/slash/projects/1) |
 52| Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests | 3 | It's an open link on our public repo (https://github.com/secheaper/slash/projects/1) |
 53| Software’s architecture and design is modular | 3 ||
 54| Software uses an accepted coding standard or convention | 3 | https://github.com/secheaper/slash/blob/main/CODE-OF-CONDUCT.md, https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
@@ -89,15 +89,15 @@ Sr. No| Notes|Self-assement|Evidence|
 83| Users can subscribe to notifications to changes to your source code repository | 2 | Each contributor gets an email when any issues they are assigned gets an update. |
 84| Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model | 0| NA|
 85| Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project? | Yes (3) | We received a Pull Request from someone outside of our project fixing one of our issues (https://github.com/secheaper/slash/pull/15). He was simply browsing Github and came across our repo when he searched for the "good-first-issue" keyword. | 
-86| Do you have a contributions policy | Yes (3) | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
-87| Is your contributions' policy publicly available? | Yes (3) | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+86| Do you have a contributions policy | 3 | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
+87| Is your contributions' policy publicly available? | 3 | https://github.com/secheaper/slash/blob/main/CONTRIBUTING.md |
 88| Do contributors keep the copyright/IP of their contributions |3|https://github.com/secheaper/slash/commit/4f8418f1d12ddebf260c259b1047873475536457|
 89| Website and documentation clearly states the copyright owners of your software and documentation | ||
 90| Do each of your source code files include a copyright statement | Yes (3) | Can be seen in all the python codes |
 91| The website and documentation clearly state the licence of your software | 3 | https://github.com/secheaper/slash/blob/main/LICENSE |
-92| Software released under an open source licence | Yes (3) | https://github.com/secheaper/slash/blob/main/LICENSE |
+92| Software released under an open source licence | 3 | https://github.com/secheaper/slash/blob/main/LICENSE |
 93| Software released under an OSI-approved open-source licence | Yes (3) | https://github.com/secheaper/slash/blob/main/LICENSE |
-94| Source code files include a licence header | Yes (3) | MIT License(https://github.com/secheaper/slash/blob/main/LICENSE) |
+94| Source code files include a licence header | 3 | MIT License(https://github.com/secheaper/slash/blob/main/LICENSE) |
 95| Recommended citation for your software | ||
 96| Documentation includes a project roadmap (a list of project and development milestones for the next 3, 6 months) | 3|https://github.com/secheaper/slash/projects/1|
 97| Documentation describe how the project is funded, and the period over which funding is guaranteed? |0| NA|
