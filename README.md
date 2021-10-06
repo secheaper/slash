@@ -103,7 +103,7 @@ For Mac
 python3 slash.py --search "philips hue" --sort pr
 
 For Windows
-python3 slash.py --search "philips hue" --sort pr
+python slash.py --search "philips hue" --sort pr
 ```
 ```
 | timestamp           | title                                       | price   | website   |
