@@ -52,7 +52,12 @@ pip3 install -r requirements.txt
 4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the python command to run the ```slash.py``` file.
 ```
 cd src
+
+For Mac
 python3 slash.py --search socks
+
+For Windows
+python slash.py --search socks
 ```
 :golf: Flags and Command Line Arguments
 ---
@@ -73,7 +78,11 @@ Currently the tool supports the following flags and command line arguments. Thes
 the e-commerce websites. So, to use this, run the python script followed by the --search argument and the 
 search string. The search string should be in double quotes if it have two or more words. Example:
 ```
+For Mac
 python3 slash.py --search "philips hue"
+
+For Windows
+python slash.py --search "philips hue"
 ```
 ```
 | timestamp           | title                                       | price   | website   |
@@ -90,6 +99,10 @@ python3 slash.py --search "philips hue"
 after scraping. The first value is used to initially sort and filter the results of the scraping. The arguments
 following the first one are not required but will be used to further sort the filtered results. Example:
 ```
+For Mac
+python3 slash.py --search "philips hue" --sort pr
+
+For Windows
 python3 slash.py --search "philips hue" --sort pr
 ```
 ```
@@ -106,7 +119,11 @@ python3 slash.py --search "philips hue" --sort pr
 The ```--des``` flag can be set to sort the requested products in a non-increasing order. This flag will be 
 actually used when coupled with ```--sort```. Example:
 ```
+For Mac
 python3 slash.py --search "philips hue" --sort pr --des
+
+For Windows
+python slash.py --search "philips hue" --sort pr --des
 ```
 ```
 | timestamp           | title                                       | price   | website   |
@@ -124,7 +141,11 @@ The maximum number of results that are scraped from each website can be set usin
 an integer value ```n``` and then returns ```n``` results from each website. Note that tool returns a maximum of 
 the value of ```n``` and the number of results on the webiste. By default this value is set to 3. Example:
 ```
+For Mac
 python3 slash.py --search "philips hue" --num 5
+
+For Windows
+python slash.py --search "philips hue" --num 5
 ```
 ```
 | timestamp           | title                                       | price   | website   |
