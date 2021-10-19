@@ -1,14 +1,14 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
-![GitHub](https://img.shields.io/github/license/secheaper/slash)
-![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
+![GitHub](https://img.shields.io/github/license/Urvashi74/slash)
+![github workflow](https://github.com/Urvashi74/cheaper/actions/workflows/python-app.yml/badge.svg) 
 [![DOI](https://zenodo.org/badge/407550383.svg)](https://zenodo.org/badge/latestdoi/407550383)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Urvashi74/slash)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/secheaper/slash)
-![Github pull requests](https://img.shields.io/github/issues-pr/secheaper/slash)
-![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/secheaper/slash)
-[![codecov](https://codecov.io/gh/secheaper/slash/branch/main/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/secheaper/slash)
+![Github closes issues](https://img.shields.io/github/issues-closed-raw/Urvashi74/slash)
+![Github pull requests](https://img.shields.io/github/issues-pr/Urvashi74/slash)
+![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Urvashi74/slash)
+[![codecov](https://codecov.io/gh/Urvashi74/slash/branch/main/graph/badge.svg?token=I2J7ICDDI9)](https://codecov.io/gh/Urvashi74/slash)
 
 Slash is a command line tool that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites. 
 - **Fast**: With slash, you can save over 50% of your time by comparing deals across websites within seconds
