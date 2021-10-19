@@ -1,0 +1,3 @@
+amazon query:caps
+amazon query:telephones
+amazon query:mouse
