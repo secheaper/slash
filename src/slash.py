@@ -8,9 +8,10 @@ this file. If not, please write to: secheaper@gmail.com
 """
 
 import argparse
-import scraper
+# import scraper
 import formatter
 from tabulate import tabulate
+from scraper import search, AMAZON, WALMART
 
 
 def main():
@@ -22,8 +23,10 @@ def main():
     parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
     args = parser.parse_args()
     
-    products1 = scraper.searchAmazon(args.search)
-    products2 = scraper.searchWalmart(args.search)
+    # products1 = scraper.searchAmazon(args.search)
+    # products2 = scraper.searchWalmart(args.search)
+    products1 = search(args.search, AMAZON)
+    products2 = search(args.search, WALMART)
 
     for sortBy in args.sort:
         products1 = formatter.sortList(products1, sortBy, args.des)[:args.num]
