@@ -8,17 +8,46 @@ from scraper.configs import AMAZON, WALMART
 
 
 def httpsGet(URL):
+    """makes HTTP called to the requested URL with custom headers
+
+    Parameters
+    ----------
+    URL: str
+        URL we are sending request to
+
+    Returns
+    ----------
+    soup: str
+        HTML of page we requested
     """
-    The httpsGet funciton makes HTTP called to the requested URL with custom headers
-    """
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'DNT': '1',
+        'Connection': 'close',
+        'Upgrade-Insecure-Requests': '1'
+    }
     page = requests.get(URL, headers=headers)
-    soup1 = BeautifulSoup(page.content, "html.parser")
-    return BeautifulSoup(soup1.prettify(), "html.parser")
+    # TODO check for page status
+    soup1 = BeautifulSoup(page.content, 'html.parser')
+    return BeautifulSoup(soup1.prettify(), 'html.parser')
 
 
 def search(query, config):
     """Scrape the given config for a specific item
+
+    Parameters
+    ----------
+    query: str
+        Query of item we are looking for
+    config: dict
+        Configuration for site we are scraping
+
+    Returns
+    ----------
+    products: list
+        List of items returned from website
     """
 
     query = formatter.formatSearchQuery(query)
@@ -40,10 +69,15 @@ def scrape(args, scrapers):
 
     Parameters
     ----------
-    args: list
-        List of arguments used for scraping
+    args: dict
+        Dictionary of arguments used for scraping
     scrapers: list
         List of scrapers to use
+
+    Returns
+    ----------
+    overall: list
+        List of items returned from scrapers
     """
 
     query = args.search
@@ -59,11 +93,11 @@ def scrape(args, scrapers):
             local = []
         else:
             continue
-    
+
         for sort_by in args.sort:
             local = formatter.sortList(local, sort_by, args.des)[:args.num]
         overall.extend(local)
-    
+
     for sort_by in args.sort:
         overall = formatter.sortList(overall, sort_by, args.des)
 
