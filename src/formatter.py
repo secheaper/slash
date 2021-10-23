@@ -9,11 +9,12 @@ this file. If not, please write to: secheaper@gmail.com
 
 """
 The formatter module focuses on processing raw text and returning it in 
-the required format. 
+the required format.
 """
 
 from datetime import datetime
 import math
+
 
 def formatResult(website, titles, prices, links):
     """
@@ -22,17 +23,21 @@ def formatResult(website, titles, prices, links):
     a paragraph tag.
     """
     title, price, link = '', '', ''
-    if titles: title = titles[0].get_text().strip()
-    if prices: price = prices[0].get_text().strip()
-    if links: link = links[0]['href']
+    if titles:
+        title = titles[0].get_text().strip()
+    if prices:
+        price = prices[0].get_text().strip()
+    if links:
+        link = links[0]['href']
     product = {
         'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "title": formatTitle(title),
-        "price": price, 
-        # "link":f'www.{website}.com{link}', 
+        "price": price,
+        # "link":f'www.{website}.com{link}',
         "website": website,
     }
     return product
+
 
 def sortList(arr, sortBy, reverse):
     """
@@ -47,12 +52,14 @@ def sortList(arr, sortBy, reverse):
         pass
     return arr
 
+
 def formatSearchQuery(query):
     """
     The formatSearchQuery function formats the search string into a string that 
     can be sent as a url paramenter.
     """
     return query.replace(" ", "+")
+
 
 def formatTitle(title):
     """
@@ -61,6 +68,7 @@ def formatTitle(title):
     if(len(title) > 40):
         return title[:40] + "..."
     return title
+
 
 def getNumbers(st):
     """

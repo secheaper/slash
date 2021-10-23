@@ -20,7 +20,7 @@ async def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/az/{item_name}")
 async def searchAmazonAPI(item_name: str, q: Optional[str] = None):
-    file1 = open("logger.txt", "a") 
+    file1 = open("logger.txt", "a")
     file1.write('amazon query:' + str(item_name)+'\n')
     itemList = scraper.searchAmazon(item_name)
     itemListJson = json.dumps(itemList) 
