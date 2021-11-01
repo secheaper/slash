@@ -26,7 +26,7 @@ async def read_root():
     ----------
     documentation redirect
     '''
-    response = RedirectResponse(url='/docs')
+    response = RedirectResponse(url='/redoc')
     return response
 
 @app.get("/{site}/{item_name}")
