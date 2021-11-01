@@ -13,3 +13,4 @@ def write_csv(arr,product,file_path):
 	dict_writer.writeheader()
 	dict_writer.writerows(arr)
 	a_file.close()
+	return file_name
