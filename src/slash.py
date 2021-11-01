@@ -31,7 +31,8 @@ def main():
         products2 = formatter.sortList(products2, sortBy, args.des)[:args.num]
         products3 = formatter.sortList(products3, sortBy, args.des)[:args.num]
         results = products1 + products2 + products3
-        results = formatter.sortList(results, sortBy, args.des)
+        results = formatter.sortList(results, "ra" , args.des)
+
 
     print()
     print()

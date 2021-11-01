@@ -15,22 +15,24 @@ the required format.
 from datetime import datetime
 import math
 
-def formatResult(website, titles, prices, links):
+def formatResult(website, titles, prices, links,ratings):
     """
     The formatResult function takes the scraped HTML as input, and extracts the 
     necessary values from the HTML code. Ex. extracting a price '$19.99' from
     a paragraph tag.
     """
-    title, price, link = '', '', ''
+    title, price, link, rating = '', '', '', ''
     if titles: title = titles[0].get_text().strip()
     if prices: price = prices[0].get_text().strip()
-    if links: link = links[0]['href']
+    #if links: link = links[0]['href']
+    if ratings: rating = ratings[0].get_text().strip().split()[0]
     product = {
         'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "title": formatTitle(title),
         "price": price, 
-        "link":f'www.{website}.com{link}', 
+     #   "link":f'www.{website}.com{link}', 
         "website": website,
+        "rating" : rating,
     }
     return product
 
@@ -43,7 +45,7 @@ def sortList(arr, sortBy, reverse):
         return sorted(arr, key=lambda x: getNumbers(x["price"]), reverse=reverse)
     # To-do: sort by rating
     elif sortBy == "ra":
-        # return sorted(arr, key=lambda x: getNumbers(x.price), reverse=reverse)
+        return sorted(arr, key=lambda x: getNumbers(x["rating"]), reverse=reverse)
         pass
     return arr
 

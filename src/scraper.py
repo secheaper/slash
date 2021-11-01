@@ -14,9 +14,7 @@ The scraper module holds functions that actually scrape the e-commerce websites
 import requests
 import formatter
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
+import re
 
 
 def httpsGet(URL):
@@ -43,9 +41,9 @@ def searchAmazon(query):
     results = page.findAll("div", {"data-component-type": "s-search-result"})
     products = []
     for res in results:
-        titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select(
-            "h2 a.a-link-normal")
-        product = formatter.formatResult("amazon", titles, prices, links)
+        titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
+        ratings = res.select("span.a-icon-alt")
+        product = formatter.formatResult("amazon",  titles, prices, links,ratings)
         products.append(product)
     return products
 
@@ -57,13 +55,15 @@ def searchWalmart(query):
     URL = f'https://www.walmart.com/search?q={query}'
     page = httpsGet(URL)
     results = page.findAll("div", {"data-item-id":True})
+    #print(results)
     products = []
+    pattern = re.compile(r'Stars')
     for res in results:
         titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
-        product = formatter.formatResult("walmart", titles, prices, links)
+        ratings = res.findAll("span",{"class":"w_Cj"},text=pattern)
+        product = formatter.formatResult("walmart", titles, prices, links,ratings)
         products.append(product)
     return products
-
 
 def searchEtsy(query):
     """
@@ -78,9 +78,7 @@ def searchEtsy(query):
     soup = BeautifulSoup(response.content, 'lxml')
     for item in soup.select('.wt-grid__item-xs-6'):
         titles, prices, links = (item.select("h3")), (item.select(".currency-value")), (item.select('.width-full'))
-        rating = item.select('span.screen-reader-only')
-        if rating == []:
-            rating = '[<span class="screen-reader-only">0 out of 5 stars</span>]'
-        product = formatter.formatResult("Etsy", titles, prices, links)
+        ratings = item.select('span.screen-reader-only')
+        product = formatter.formatResult("Etsy", titles, prices, links, ratings)
         products.append(product)
     return products
