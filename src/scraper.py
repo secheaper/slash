@@ -7,49 +7,38 @@ this file. If not, please write to: secheaper@gmail.com
 
 """
 
-"""
-The scraper module holds functions that actually scrape the e-commerce websites
-"""
-
-import requests
+import argparse
+import scraper
 import formatter
-from bs4 import BeautifulSoup
+from tabulate import tabulate
 
-def httpsGet(URL):
-    """
-    The httpsGet funciton makes HTTP called to the requested URL with custom headers
-    """
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
-    page = requests.get(URL, headers=headers)
-    soup1 = BeautifulSoup(page.content, "html.parser")
-    return BeautifulSoup(soup1.prettify(), "html.parser") 
 
-def searchAmazon(query):
-    """
-    The searchAmazon function scrapes amazon.com
-    """
-    query = formatter.formatSearchQuery(query)
-    URL = f'https://www.amazon.com/s?k={query}'
-    page = httpsGet(URL)
-    results = page.findAll("div", {"data-component-type":"s-search-result"})
-    products = []
-    for res in results:
-        titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
-        product = formatter.formatResult("amazon",  titles, prices, links)
-        products.append(product)
-    return products
+def main():
+    parser = argparse.ArgumentParser(description="Slash")
+    parser.add_argument('--search', type=str, help='Product search query')
+    parser.add_argument('--num', type=int, help="Maximum number of records", default=3)
+    parser.add_argument('--sort', type=str, nargs='+', help="Sort according to re (relevance: default), pr (price) or ra (rating)", default="re")
+    parser.add_argument('--link', action='store_true', help="Show links in the table")
+    parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
+    args = parser.parse_args()
+    
+    products1 = scraper.searchAmazon(args.search)
+    products2 = scraper.searchWalmart(args.search)
+    products3 = scraper.searchEtsy(args.search)
 
-def searchWalmart(query):
-    """
-    The searchWalmart function scrapes walmart.com
-    """
-    query = formatter.formatSearchQuery(query)
-    URL = f'https://www.walmart.com/search?q={query}'
-    page = httpsGet(URL)
-    results = page.findAll("div", {"data-item-id":True})
-    products = []
-    for res in results:
-        titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
-        product = formatter.formatResult("walmart", titles, prices, links)
-        products.append(product)
-    return products
+    for sortBy in args.sort:
+        products1 = formatter.sortList(products1, sortBy, args.des)[:args.num]
+        products2 = formatter.sortList(products2, sortBy, args.des)[:args.num]
+        products3 = formatter.sortList(products3, sortBy, args.des)[:args.num]
+        results = products1 + products2 + products3
+        results = formatter.sortList(results, "ra" , args.des)
+
+
+    print()
+    print()
+    print(tabulate(results, headers="keys", tablefmt="github"))
+    print()
+    print()
+
+if __name__ == '__main__':
+    main()
