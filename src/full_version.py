@@ -34,10 +34,36 @@ class full_version:
 				self.email=data['email']
 		return self.name, self.email
 
+	def search_fn(self):
+		prod=input("Enter name of product to Search: ")
+		self.scrape(prod)
+		pass
+
+	def extract_list(self):
+		pass
+
+	def scrape(self,prod):
+		products_1 = scraper.searchAmazon(prod)
+    	products_2 = scraper.searchWalmart(prod)
+    	products_3 = scraper.searchEtsy(prod)
 
 
 
 
 	def driver(self):
 		self.login()
+		flag_loop=1
 		print("Welcome ",self.name)
+		while flag_loop==1:
+			print("Select from following:")
+			print("1. Search new product\n2. See exiting list\n3. Exit")
+			choice=int(input())
+			if choice==1:
+				self.search_fn()
+			elif choice==2:
+				self.extract_list()
+			elif choice==3:
+				print("Thank You for Using Slash")
+				flag_loop = 0
+			else:
+				rint("Incorrect Option")

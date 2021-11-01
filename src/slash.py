@@ -45,7 +45,7 @@ def main():
         results = formatter.sortList(results, "ra" , args.des)
 
 
-    print()
+    print(args.des)
     print()
     print(tabulate(results, headers="keys", tablefmt="github"))
     print()
