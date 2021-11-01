@@ -42,7 +42,8 @@ def main():
     print()
     print()
     print("CSV Saved at: ",os.getcwd())
-    csv_writer.write_csv((products_1+products_2), args.search, args.cd)
+    print("File Name:", csv_writer.write_csv((products_1+products_2), args.search, args.cd))
+    
     
 
 if __name__ == '__main__':
