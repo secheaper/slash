@@ -7,38 +7,73 @@ this file. If not, please write to: secheaper@gmail.com
 
 """
 
-import argparse
-import scraper
+"""
+The scraper module holds functions that actually scrape the e-commerce websites
+"""
+
+import requests
 import formatter
-from tabulate import tabulate
+from bs4 import BeautifulSoup
+import re
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Slash")
-    parser.add_argument('--search', type=str, help='Product search query')
-    parser.add_argument('--num', type=int, help="Maximum number of records", default=3)
-    parser.add_argument('--sort', type=str, nargs='+', help="Sort according to re (relevance: default), pr (price) or ra (rating)", default="re")
-    parser.add_argument('--link', action='store_true', help="Show links in the table")
-    parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
-    args = parser.parse_args()
-    
-    products1 = scraper.searchAmazon(args.search)
-    products2 = scraper.searchWalmart(args.search)
-    products3 = scraper.searchEtsy(args.search)
+def httpsGet(URL):
+    """
+    The httpsGet funciton makes HTTP called to the requested URL with custom headers
+    """
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
+    page = requests.get(URL, headers=headers)
+    soup1 = BeautifulSoup(page.content, "html.parser")
+    return BeautifulSoup(soup1.prettify(), "html.parser") 
 
-    for sortBy in args.sort:
-        products1 = formatter.sortList(products1, sortBy, args.des)[:args.num]
-        products2 = formatter.sortList(products2, sortBy, args.des)[:args.num]
-        products3 = formatter.sortList(products3, sortBy, args.des)[:args.num]
-        results = products1 + products2 + products3
-        results = formatter.sortList(results, "ra" , args.des)
+def searchAmazon(query):
+    """
+    The searchAmazon function scrapes amazon.com
+    """
+    query = formatter.formatSearchQuery(query)
+    URL = f'https://www.amazon.com/s?k={query}'
+    page = httpsGet(URL)
+    results = page.findAll("div", {"data-component-type":"s-search-result"})
+    products = []
+    for res in results:
+        titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
+        ratings = res.select("span.a-icon-alt")
+        product = formatter.formatResult("amazon",  titles, prices, links,ratings)
+        products.append(product)
+    return products
 
+def searchWalmart(query):
+    """
+    The searchWalmart function scrapes walmart.com
+    """
+    query = formatter.formatSearchQuery(query)
+    URL = f'https://www.walmart.com/search?q={query}'
+    page = httpsGet(URL)
+    results = page.findAll("div", {"data-item-id":True})
+    #print(results)
+    products = []
+    pattern = re.compile(r'Stars')
+    for res in results:
+        titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
+        ratings = res.findAll("span",{"class":"w_Cj"},text=pattern)
+        product = formatter.formatResult("walmart", titles, prices, links,ratings)
+        products.append(product)
+    return products
 
-    print()
-    print()
-    print(tabulate(results, headers="keys", tablefmt="github"))
-    print()
-    print()
-
-if __name__ == '__main__':
-    main()
+def searchEtsy(query):
+    """
+    The searchEtsy function scrapes Etsy.com
+    """
+    query = formatter.formatSearchQuery(query)
+    url = f'https://www.etsy.com/search?q={query}'
+    products = []
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.content, 'lxml')
+    for item in soup.select('.wt-grid__item-xs-6'):
+        titles, prices, links = (item.select("h3")), (item.select(".currency-value")), (item.select('.width-full'))
+        ratings = item.select('span.screen-reader-only')
+        product = formatter.formatResult("Etsy", titles, prices, links, ratings)
+        products.append(product)
+    return products
