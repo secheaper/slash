@@ -14,6 +14,7 @@ from tabulate import tabulate
 import os
 import csv
 import full_version
+import csv_writer
 
 
 
@@ -50,7 +51,7 @@ def main():
     print(tabulate(results, headers="keys", tablefmt="github"))
     print()
     print()
-    rint("CSV Saved at: ",args.cd)
+    print("CSV Saved at: ",args.cd)
     print("File Name:", csv_writer.write_csv(results_1, args.search, args.cd))
 
 if __name__ == '__main__':

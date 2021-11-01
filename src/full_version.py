@@ -1,5 +1,7 @@
 import json
 import os
+import pandas as pd
+import scraper
 
 class full_version:
 	def __init__(self):
@@ -13,6 +15,7 @@ class full_version:
 			"json", 
 			"user_data.json"
 			)
+		self.df=pd.DataFrame()
 
 
 	def login(self):
@@ -43,10 +46,13 @@ class full_version:
 		pass
 
 	def scrape(self,prod):
-		products_1 = scraper.searchAmazon(prod)
-    	products_2 = scraper.searchWalmart(prod)
-    	products_3 = scraper.searchEtsy(prod)
-
+		products_1 = scraper.searchAmazon(prod,1)
+		products_2 = scraper.searchWalmart(prod,1)
+		products_3 = scraper.searchEtsy(prod,1)
+		results=products_1+products_2+products_3
+		#esults = formatter.sortList(results, "ra" , True)
+		self.df=pd.DataFrame.from_dict(results, orient='columns')
+		print(self.df)
 
 
 

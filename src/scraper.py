@@ -31,7 +31,7 @@ def httpsGet(URL):
     return BeautifulSoup(soup1.prettify(), "html.parser")
 
 
-def searchAmazon(query):
+def searchAmazon(query, df_flag=0):
     """
     The searchAmazon function scrapes amazon.com
     """
@@ -43,11 +43,11 @@ def searchAmazon(query):
     for res in results:
         titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
         ratings = res.select("span.a-icon-alt")
-        product = formatter.formatResult("amazon",  titles, prices, links,ratings)
+        product = formatter.formatResult("amazon",  titles, prices, links,ratings, df_flag)
         products.append(product)
     return products
 
-def searchWalmart(query):
+def searchWalmart(query, df_flag=0):
     """
     The searchWalmart function scrapes walmart.com
     """
@@ -61,11 +61,11 @@ def searchWalmart(query):
     for res in results:
         titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
         ratings = res.findAll("span",{"class":"w_Cj"},text=pattern)
-        product = formatter.formatResult("walmart", titles, prices, links,ratings)
+        product = formatter.formatResult("walmart", titles, prices, links,ratings, df_flag)
         products.append(product)
     return products
 
-def searchEtsy(query):
+def searchEtsy(query, df_flag=0):
     """
     The searchEtsy function scrapes Etsy.com
     """
@@ -79,6 +79,6 @@ def searchEtsy(query):
     for item in soup.select('.wt-grid__item-xs-6'):
         titles, prices, links = (item.select("h3")), (item.select(".currency-value")), (item.select('.width-full'))
         ratings = item.select('span.screen-reader-only')
-        product = formatter.formatResult("Etsy", titles, prices, links, ratings)
+        product = formatter.formatResult("Etsy", titles, prices, links, ratings, df_flag)
         products.append(product)
     return products
