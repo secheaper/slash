@@ -15,6 +15,13 @@ class full_version:
 			"json", 
 			"user_data.json"
 			)
+		self.user_list = os.path.join(
+			os.path.dirname(
+				os.path.dirname(
+					os.path.abspath(__file__))),
+			"csvs", 
+			"user_list.csv"
+			)
 		self.df=pd.DataFrame()
 		pd.set_option('display.max_rows', None)
 		pd.set_option('display.max_columns', None)
@@ -44,6 +51,19 @@ class full_version:
 	def search_fn(self):
 		prod=input("Enter name of product to Search: ")
 		self.scrape(prod)
+		ch=int(input("\n\nEnter 1 to save product to list \nelse enter any other key to continue"))
+		if ch==1:
+			indx=int(input("Enter row number of product to save: "))
+			if indx<len(self.df):
+				if os.path.exists(self.user_list):
+					old_data=pd.read_csv(self.user_list)
+				else:
+					old_data=pd.DataFrame()
+				if self.df.title[indx] not in old_data:
+					old_data=pd.concat([old_data,self.df.iloc[[indx]]])
+					print(self.df.iloc[[indx]])
+				old_data.to_csv(self.user_list, index=False,header=self.df.columns)
+
 		pass
 
 	def extract_list(self):
@@ -53,7 +73,7 @@ class full_version:
 		products_1 = scraper.searchAmazon(prod,1)
 		products_2 = scraper.searchWalmart(prod,1)
 		products_3 = scraper.searchEtsy(prod,1)
-		results=products_1+products_2+products_3
+		results=scraper.driver(prod,df_flag=1)
 		#esults = formatter.sortList(results, "ra" , True)
 		self.df=pd.DataFrame.from_dict(results, orient='columns')
 		print(self.df)
@@ -76,4 +96,5 @@ class full_version:
 				print("Thank You for Using Slash")
 				flag_loop = 0
 			else:
-				rint("Incorrect Option")
+				print("Incorrect Option")
+
