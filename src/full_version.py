@@ -16,6 +16,10 @@ class full_version:
 			"user_data.json"
 			)
 		self.df=pd.DataFrame()
+		pd.set_option('display.max_rows', None)
+		pd.set_option('display.max_columns', None)
+		pd.set_option('display.width', None)
+		pd.set_option('display.max_colwidth', 40)
 
 
 	def login(self):
