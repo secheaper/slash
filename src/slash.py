@@ -27,21 +27,22 @@ def main():
     parser.add_argument('--link', action='store_true', help="Show links in the table")
     parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
     parser.add_argument('--cd', type=str,  help="Change directory to save CSV file with search results", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),"csvs"))
-    parser.add_argument('--csv', action='store_false',  help="Save results as CSV",)
+    parser.add_argument('--csv', action='store_true',  help="Save results as CSV",)
     args = parser.parse_args()
+
     if args.full=='T':
 
         full_version.full_version().driver()
         return
     
-    results = scraper.driver(args.search,args.num,args.csv)
+    results = scraper.driver(args.search,args.num,csv=args.csv,cd=args.cd)
 
 
     for sortBy in args.sort:
         results = formatter.sortList(results, sortBy , args.des)
 
 
-    print(args.des)
+    
     print()
     print(tabulate(results, headers="keys", tablefmt="github"))
     print()
