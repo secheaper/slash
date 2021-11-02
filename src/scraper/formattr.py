@@ -33,7 +33,7 @@ def formatResult(website, titles, prices, links):
         'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "title": formatTitle(title),
         "price": price,
-        # "link":f'www.{website}.com{link}',
+        "link":f'www.{website}.com{link}',
         "website": website,
     }
     return product
