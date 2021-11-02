@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 
-.csv
+*.csv
 user_data.json
