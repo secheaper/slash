@@ -85,14 +85,14 @@ def searchEtsy(query, df_flag):
         products.append(product)
     return products
 
-def driver(product, num=None, df_flag=0,csv=False):
+def driver(product, num=None, df_flag=0,csv=False,cd=None):
     products_1 = searchAmazon(product,df_flag)
     products_2 = searchWalmart(product,df_flag)
     products_3 = searchEtsy(product,df_flag)
     results=products_1+products_2+products_3
     if csv==True:
 
-        print("CSV Saved at: ",args.cd)
-        print("File Name:", csv_writer.write_csv(results, args.search, args.cd))
+        print("CSV Saved at: ",cd)
+        print("File Name:", csv_writer.write_csv(results, product, cd))
     return products_1[:num]+products_2[:num]+products_3[:num]
 
