@@ -30,7 +30,7 @@ async def read_root():
     return response
 
 @app.get("/{site}/{item_name}")
-async def search_Amazon_API(site : str,item_name: str, q: Optional[str] = None): 
+async def search_items_API(site : str,item_name: str, required: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, ListLengthInd: Optional[int] = 10): 
     '''Wrapper API to fetch AMAZON, WALMART and TARGET query results
 
     Parameters
@@ -49,10 +49,12 @@ async def search_Amazon_API(site : str,item_name: str, q: Optional[str] = None):
     #building argument 
     args = {
     'search': item_name,
-    'sort' : 'pr', # placeholder TDB
-    'des' : 'True' # placeholder TBD
+    'sort' : 'pr' if order_by_col == 'price' else 'pr', # placeholder TDB
+    'des' : reverse, # placeholder TBD
+    'num' : ListLengthInd
     }
 
+    print(args)
     scrapers = []
 
     if site == 'az' or site == 'all':
@@ -67,7 +69,7 @@ async def search_Amazon_API(site : str,item_name: str, q: Optional[str] = None):
  
     #returning JSON list
     itemListJson = json.dumps(itemList) 
-    file.close()
+    file.close()    
     return itemListJson
 
 if __name__ == "__main__":
