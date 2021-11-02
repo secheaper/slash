@@ -14,7 +14,7 @@ from tabulate import tabulate
 import os
 import csv
 import full_version
-import csv_writer
+
 
 
 
@@ -27,23 +27,18 @@ def main():
     parser.add_argument('--link', action='store_true', help="Show links in the table")
     parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
     parser.add_argument('--cd', type=str,  help="Change directory to save CSV file with search results", default=os.getcwd())
+    parser.add_argument('--csv', action='store_false',  help="Save results as CSV",)
     args = parser.parse_args()
     if args.full=='T':
 
         full_version.full_version().driver()
         return
     
-    products_1 = scraper.searchAmazon(args.search)
-    products_2 = scraper.searchWalmart(args.search)
-    products_3 = scraper.searchEtsy(args.search)
+    results = scraper.driver(args.search,args.num,args.csv)
+
 
     for sortBy in args.sort:
-        products1 = formatter.sortList(products_1, sortBy, args.des)[:args.num]
-        products2 = formatter.sortList(products_2, sortBy, args.des)[:args.num]
-        products3 = formatter.sortList(products_3, sortBy, args.des)[:args.num]
-        results = products1 + products2 + products3
-        results_1 = products_1 + products_2 + products_3
-        results = formatter.sortList(results, "ra" , args.des)
+        results = formatter.sortList(results, sortBy , args.des)
 
 
     print(args.des)
@@ -51,8 +46,6 @@ def main():
     print(tabulate(results, headers="keys", tablefmt="github"))
     print()
     print()
-    print("CSV Saved at: ",args.cd)
-    print("File Name:", csv_writer.write_csv(results_1, args.search, args.cd))
 
 if __name__ == '__main__':
     main()
