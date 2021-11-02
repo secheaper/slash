@@ -15,6 +15,8 @@ import requests
 import formatter
 from bs4 import BeautifulSoup
 import re
+import csv_writer
+import csv
 
 
 def httpsGet(URL):
@@ -31,7 +33,7 @@ def httpsGet(URL):
     return BeautifulSoup(soup1.prettify(), "html.parser")
 
 
-def searchAmazon(query, df_flag=0):
+def searchAmazon(query, df_flag):
     """
     The searchAmazon function scrapes amazon.com
     """
@@ -47,7 +49,7 @@ def searchAmazon(query, df_flag=0):
         products.append(product)
     return products
 
-def searchWalmart(query, df_flag=0):
+def searchWalmart(query, df_flag):
     """
     The searchWalmart function scrapes walmart.com
     """
@@ -65,7 +67,7 @@ def searchWalmart(query, df_flag=0):
         products.append(product)
     return products
 
-def searchEtsy(query, df_flag=0):
+def searchEtsy(query, df_flag):
     """
     The searchEtsy function scrapes Etsy.com
     """
@@ -82,3 +84,15 @@ def searchEtsy(query, df_flag=0):
         product = formatter.formatResult("Etsy", titles, prices, links, ratings, df_flag)
         products.append(product)
     return products
+
+def driver(product, num=None, df_flag=0,csv=False):
+    products_1 = searchAmazon(product,df_flag)
+    products_2 = searchWalmart(product,df_flag)
+    products_3 = searchEtsy(product,df_flag)
+    results=products_1+products_2+products_3
+    if csv==True:
+
+        print("CSV Saved at: ",args.cd)
+        print("File Name:", csv_writer.write_csv(results, args.search, args.cd))
+    return products_1[:num]+products_2[:num]+products_3[:num]
+
