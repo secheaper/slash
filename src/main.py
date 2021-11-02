@@ -30,7 +30,7 @@ async def read_root():
     return response
 
 @app.get("/{site}/{item_name}")
-async def search_items_API(site : str,item_name: str, required: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, ListLengthInd: Optional[int] = 10): 
+async def search_items_API(site : str,item_name: str, relevant: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, ListLengthInd: Optional[int] = 10): 
     '''Wrapper API to fetch AMAZON, WALMART and TARGET query results
 
     Parameters
@@ -51,7 +51,8 @@ async def search_items_API(site : str,item_name: str, required: Optional[str] = 
     'search': item_name,
     'sort' : 'pr' if order_by_col == 'price' else 'pr', # placeholder TDB
     'des' : reverse, # placeholder TBD
-    'num' : ListLengthInd
+    'num' : ListLengthInd,
+    'relevant' : relevant
     }
 
     print(args)
