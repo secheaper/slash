@@ -67,6 +67,11 @@ class full_version:
 		pass
 
 	def extract_list(self):
+		if os.path.exists(self.user_list):
+			old_data=pd.read_csv(self.user_list)
+			print(old_data)
+		else:
+			print("No saved data found.")
 		pass
 
 	def scrape(self,prod):
