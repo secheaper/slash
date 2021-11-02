@@ -1,3 +1,7 @@
 amazon query:caps
 amazon query:telephones
 amazon query:mouse
+amazon query:hershey
+amazon query:cadbury
+amazon query:cadbury
+amazon query:cadbury

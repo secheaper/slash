@@ -74,7 +74,7 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
     return itemListJson
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8822)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
 
