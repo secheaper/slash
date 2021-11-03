@@ -28,6 +28,7 @@ def main():
     parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
     parser.add_argument('--cd', type=str,  help="Change directory to save CSV file with search results", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),"csvs"))
     parser.add_argument('--csv', action='store_true',  help="Save results as CSV",)
+    parser.add_argument('--currency', type=str, help="Display the amount in specified currency")
     args = parser.parse_args()
 
     if args.full=='T':
