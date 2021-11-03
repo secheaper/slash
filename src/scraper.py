@@ -4,7 +4,6 @@ You may use, distribute and modify this code under the
 terms of the MIT license.
 You should have received a copy of the MIT license with
 this file. If not, please write to: secheaper@gmail.com
-
 """
 
 """
@@ -17,7 +16,8 @@ from bs4 import BeautifulSoup
 import re
 import csv_writer
 import csv
-
+from datetime import datetime
+import pandas as pd
 
 def httpsGet(URL):
     """
@@ -86,13 +86,13 @@ def searchEtsy(query, df_flag, currency):
     return products
 
 def driver(product, currency, num=None, df_flag=0,csv=False,cd=None):
+    now=datetime.now()
+    file_name=product+now.strftime("%m%d%y_%H%M")+'.csv'
     products_1 = searchAmazon(product,df_flag, currency)
     products_2 = searchWalmart(product,df_flag, currency)
     products_3 = searchEtsy(product,df_flag, currency)
     results=products_1+products_2+products_3
     if csv==True:
-
-        print("CSV Saved at: ",cd)
-        print("File Name:", csv_writer.write_csv(results, product, cd))
+        df=pd.DataFrame(results)
+        df.to_csv(file_name, encoding='utf-8', index=False)
     return products_1[:num]+products_2[:num]+products_3[:num]
-
