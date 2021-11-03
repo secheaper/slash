@@ -6,7 +6,16 @@ You should have received a copy of the MIT license with
 this file. If not, please write to: secheaper@gmail.com
 
 """
-import formatter
+import os
+import sys
+import inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+print(currentdir)
+print(parentdir)
+sys.path.insert(0, parentdir)
+print(sys.path)
+import src.scraper.formattr as formatter
 import math
 
 def test_getNumbers():
