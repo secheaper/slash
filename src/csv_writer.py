@@ -4,6 +4,9 @@ import os
 
 
 def write_csv(arr,product,file_path):
+	''' Returns the CSV file with the naming nomenclature as 'ProductDate_Time'
+        Parameters- product: product entered by the user, file_path: path where the csv needs to be stored
+        Returns- file_name: CSV file '''
 	os.chdir(file_path)
 	keys = arr[0].keys()
 	now=datetime.now()
