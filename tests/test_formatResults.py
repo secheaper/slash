@@ -12,10 +12,7 @@ import sys
 import inspect
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
-print(currentdir)
-print(parentdir)
 sys.path.insert(0, parentdir)
-print(sys.path)
 import src.scraper.formattr as formatter
 from bs4 import BeautifulSoup
 
@@ -39,6 +36,5 @@ def test_formatResults():
 
     product = formatter.formatResult("example", titles, prices, links)
     ans = {"title":"title", "price":"$0.99", "website":"example"}
-    print(product["website"], ans["website"])
 
     assert product["title"] == ans["title"] and product["price"] == ans["price"] and product["website"] == ans["website"]
