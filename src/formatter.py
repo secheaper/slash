@@ -15,19 +15,23 @@ the required format.
 from datetime import datetime
 import math
 
-def formatResult(website, titles, prices, links,ratings,df_flag):
+def formatResult(website, titles, prices, links,ratings,df_flag, currency):
     """
     The formatResult function takes the scraped HTML as input, and extracts the 
     necessary values from the HTML code. Ex. extracting a price '$19.99' from
     a paragraph tag.
     """
-    title, price, link, rating = '', '', '', ''
+
+    title, price, link, rating, converted_cur = '', '', '', '', ''
     if titles: title = titles[0].get_text().strip()
     if prices: price = prices[0].get_text().strip()
+    if '$' not in price:
+        price='$'+price
     if links: link = links[0]['href']
     if ratings: rating = ratings[0].get_text().strip().split()[0]
     if df_flag==0: title=formatTitle(title)
     if df_flag==0: link=formatTitle(link)
+    if currency: converted_cur = getCurrency(currency, price)
     product = {
         'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "title": title,
@@ -35,7 +39,9 @@ def formatResult(website, titles, prices, links,ratings,df_flag):
         "link":f'www.{website}.com{link}', 
         "website": website,
         "rating" : rating,
+        "converted price": converted_cur
     }
+    
     return product
 
 
@@ -82,3 +88,14 @@ def getNumbers(st):
     except:
         ans = math.inf
     return ans
+
+def getCurrency(currency, price):
+
+    converted_cur = 0.0
+    if len(price)>1 :
+        if currency == "inr":
+            converted_cur = 75 * int(price[(price.index("$")+1):price.index(".")].replace(",",""))
+        elif currency == "euro":
+            converted_cur = 1.16 * int(price[(price.index("$")+1):price.index(".")].replace(",",""))
+        converted_cur=currency.upper()+' '+str(converted_cur)
+    return converted_cur

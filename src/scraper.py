@@ -33,7 +33,7 @@ def httpsGet(URL):
     return BeautifulSoup(soup1.prettify(), "html.parser")
 
 
-def searchAmazon(query, df_flag):
+def searchAmazon(query, df_flag, currency):
     """
     The searchAmazon function scrapes amazon.com
     """
@@ -45,11 +45,11 @@ def searchAmazon(query, df_flag):
     for res in results:
         titles, prices, links = res.select("h2 a span"), res.select("span.a-price span"), res.select("h2 a.a-link-normal")
         ratings = res.select("span.a-icon-alt")
-        product = formatter.formatResult("amazon",  titles, prices, links,ratings, df_flag)
+        product = formatter.formatResult("amazon",  titles, prices, links,ratings, df_flag, currency)
         products.append(product)
     return products
 
-def searchWalmart(query, df_flag):
+def searchWalmart(query, df_flag, currency):
     """
     The searchWalmart function scrapes walmart.com
     """
@@ -63,11 +63,11 @@ def searchWalmart(query, df_flag):
     for res in results:
         titles, prices, links = res.select("span.lh-title"), res.select("div.lh-copy"), res.select("a")
         ratings = res.findAll("span",{"class":"w_Cj"},text=pattern)
-        product = formatter.formatResult("walmart", titles, prices, links,ratings, df_flag)
+        product = formatter.formatResult("walmart", titles, prices, links,ratings, df_flag, currency)
         products.append(product)
     return products
 
-def searchEtsy(query, df_flag):
+def searchEtsy(query, df_flag, currency):
     """
     The searchEtsy function scrapes Etsy.com
     """
@@ -81,14 +81,14 @@ def searchEtsy(query, df_flag):
     for item in soup.select('.wt-grid__item-xs-6'):
         titles, prices, links = (item.select("h3")), (item.select(".currency-value")), (item.select('.width-full'))
         ratings = item.select('span.screen-reader-only')
-        product = formatter.formatResult("Etsy", titles, prices, links, ratings, df_flag)
+        product = formatter.formatResult("Etsy", titles, prices, links, ratings, df_flag, currency)
         products.append(product)
     return products
 
-def driver(product, num=None, df_flag=0,csv=False,cd=None):
-    products_1 = searchAmazon(product,df_flag)
-    products_2 = searchWalmart(product,df_flag)
-    products_3 = searchEtsy(product,df_flag)
+def driver(product, currency, num=None, df_flag=0,csv=False,cd=None):
+    products_1 = searchAmazon(product,df_flag, currency)
+    products_2 = searchWalmart(product,df_flag, currency)
+    products_3 = searchEtsy(product,df_flag, currency)
     results=products_1+products_2+products_3
     if csv==True:
 

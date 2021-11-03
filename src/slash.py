@@ -36,7 +36,7 @@ def main():
         full_version.full_version().driver()
         return
     
-    results = scraper.driver(args.search,args.num,csv=args.csv,cd=args.cd)
+    results = scraper.driver(args.search, args.currency, args.num,csv=args.csv,cd=args.cd,)
 
 
     for sortBy in args.sort:
