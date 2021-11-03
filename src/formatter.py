@@ -22,9 +22,11 @@ def formatResult(website, titles, prices, links,ratings,df_flag, currency):
     a paragraph tag.
     """
 
-    title, price, currency, link, rating, converted_cur = '', '', '', '', '', ''
+    title, price, link, rating, converted_cur = '', '', '', '', ''
     if titles: title = titles[0].get_text().strip()
     if prices: price = prices[0].get_text().strip()
+    if '$' not in price:
+        price='$'+price
     if links: link = links[0]['href']
     if ratings: rating = ratings[0].get_text().strip().split()[0]
     if df_flag==0: title=formatTitle(title)
@@ -39,6 +41,7 @@ def formatResult(website, titles, prices, links,ratings,df_flag, currency):
         "rating" : rating,
         "converted price": converted_cur
     }
+    
     return product
 
 
@@ -88,9 +91,11 @@ def getNumbers(st):
 
 def getCurrency(currency, price):
 
-    converted_cur = ''
-    if currency == "inr":
-        converted_cur = 75 * price
-    elif currency == "euro":
-        converted_cur = 1.16 * price
+    converted_cur = 0.0
+    if len(price)>1 :
+        if currency == "inr":
+            converted_cur = 75 * int(price[(price.index("$")+1):price.index(".")])
+        elif currency == "euro":
+            converted_cur = 1.16 * int(price[(price.index("$")+1):price.index(".")])
+        converted_cur=currency.upper()+' '+str(converted_cur)
     return converted_cur
