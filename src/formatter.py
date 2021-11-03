@@ -94,8 +94,8 @@ def getCurrency(currency, price):
     converted_cur = 0.0
     if len(price)>1 :
         if currency == "inr":
-            converted_cur = 75 * int(price[(price.index("$")+1):price.index(".")])
+            converted_cur = 75 * int(price[(price.index("$")+1):price.index(".")].replace(",",""))
         elif currency == "euro":
-            converted_cur = 1.16 * int(price[(price.index("$")+1):price.index(".")])
+            converted_cur = 1.16 * int(price[(price.index("$")+1):price.index(".")].replace(",",""))
         converted_cur=currency.upper()+' '+str(converted_cur)
     return converted_cur
