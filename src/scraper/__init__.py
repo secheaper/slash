@@ -1,2 +1,2 @@
 # flake8: noqa
-from .scraper import scrape
+#from .scraper import scrape
