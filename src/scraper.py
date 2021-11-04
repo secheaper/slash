@@ -16,8 +16,11 @@ from bs4 import BeautifulSoup
 import re
 import csv_writer
 import csv
-from datetime import datetime
 import pandas as pd
+import os
+from datetime import datetime
+
+
 
 def httpsGet(URL):
     """
@@ -79,20 +82,31 @@ def searchEtsy(query, df_flag, currency):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.content, 'lxml')
     for item in soup.select('.wt-grid__item-xs-6'):
-        titles, prices, links = (item.select("h3")), (item.select(".currency-value")), (item.select('.width-full'))
+        str = (item.select("a"))
+        if str == []:
+            continue
+        else:
+            links = str
+        titles, prices = (item.select("h3")), (item.select(".currency-value"))
         ratings = item.select('span.screen-reader-only')
         product = formatter.formatResult("Etsy", titles, prices, links, ratings, df_flag, currency)
         products.append(product)
     return products
 
 def driver(product, currency, num=None, df_flag=0,csv=False,cd=None):
-    now=datetime.now()
-    file_name=product+now.strftime("%m%d%y_%H%M")+'.csv'
     products_1 = searchAmazon(product,df_flag, currency)
     products_2 = searchWalmart(product,df_flag, currency)
     products_3 = searchEtsy(product,df_flag, currency)
     results=products_1+products_2+products_3
+    result_condensed=products_1[:num]+products_2[:num]+products_3[:num]
+    result_condensed=pd.DataFrame.from_dict(result_condensed,orient='columns')
+    results =pd.DataFrame.from_dict(results, orient='columns')
+    if currency=="" or currency==None:
+        results=results.drop(columns='converted price')
+        result_condensed=result_condensed.drop(columns='converted price')
     if csv==True:
-        df=pd.DataFrame(results)
-        df.to_csv(file_name, encoding='utf-8', index=False)
-    return products_1[:num]+products_2[:num]+products_3[:num]
+        file_name=os.path.join(cd,(product+datetime.now().strftime("%y%m%d_%H%M")+".csv"))
+        print("CSV Saved at: ",cd)
+        print("File Name:", file_name)
+        results.to_csv(file_name, index=False,header=results.columns)
+    return result_condensed
