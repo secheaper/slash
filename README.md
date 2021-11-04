@@ -183,11 +183,11 @@ python slash.py --search "philips hue" --num 5
 
 <table>
   <tr>
-    <td align="center"><a href="http://www.shubhammankar.com/"><img src="https://avatars.githubusercontent.com/u/29366125?v=4" width="75px;" alt=""/><br /><sub><b>Shubham Mankar</b></sub></a></td>
-    <td align="center"><a href="https://github.com/pratikdevnani"><img src="https://avatars.githubusercontent.com/u/43350493?v=4" width="75px;" alt=""/><br /><sub><b>Pratik Devnani</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/moksh98"><img src="https://avatars.githubusercontent.com/u/29693765?v=4" width="75px;" alt=""/><br /><sub><b>Moksh Jain</b></sub></a><br /></td>
-    <td align="center"><a href="https://rahilsarvaiya.tech/"><img src="https://avatars0.githubusercontent.com/u/32304956?v=4" width="75px;" alt=""/><br /><sub><b>Rahil Sarvaiya</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/annie0467"><img src="https://avatars.githubusercontent.com/u/17164255?v=4" width="75px;" alt=""/><br /><sub><b>Anushi Keswani</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/antgad"><img src="https://avatars.githubusercontent.com/u/37169203?v=4" width="75px;" alt=""/><br /><sub><b>Anant Gadodia</b></sub></a></td>
+    <td align="center"><a href="https://github.com/AnmolikaGoyal"><img src="https://avatars.githubusercontent.com/u/68813421?v=4" width="75px;" alt=""/><br /><sub><b>Anmolika Goyal</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/shubhangij12"><img src="https://avatars.githubusercontent.com/u/48826459?v=4" width="75px;" alt=""/><br /><sub><b>Shubhangi Jain</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/shreyakarra"><img src="https://avatars0.githubusercontent.com/u/89954066?v=4" width="75px;" alt=""/><br /><sub><b>Shreya Karra</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/srujanarao"><img src="https://avatars.githubusercontent.com/u/6882921?v=4" width="75px;" alt=""/><br /><sub><b>Srujana Rao</b></sub></a><br /></td>
   </tr>
 </table>
 
